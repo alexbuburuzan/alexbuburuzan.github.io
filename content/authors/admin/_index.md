@@ -1,12 +1,13 @@
 ---
-title: Alexandru Stefan Buburuzan
+title: Alexandru-Stefan Buburuzan
 role: AI student at The University of Manchester
-avatar_filename: img-20211021-wa0010-circle.png
+avatar_filename: avatar.png
 bio: Short bio
 interests:
   - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - Machine Learning
+  - Computer Vision
+  - Medical Image Analysis
 social:
   - icon: envelope
     icon_pack: fas
@@ -36,4 +37,4 @@ email: ""
 superuser: true
 highlight_name: true
 ---
-F﻿ull bio
+Full bio
