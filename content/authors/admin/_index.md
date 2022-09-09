@@ -2,7 +2,7 @@
 title: Alexandru-Stefan Buburuzan
 role: AI student | Junior Data Scientist
 avatar_filename: avatar.png
-bio: Short bio
+bio: Incoming second-year student with an extensive background in algorithms, data structures and mathematics, highly passionate about AI.
 interests:
   - Artificial Intelligence
   - Machine Learning
@@ -37,4 +37,4 @@ email: ""
 superuser: true
 highlight_name: true
 ---
-Full bio
+Work in progress 👷🏗️
