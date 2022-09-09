@@ -27,7 +27,7 @@ experience:
     company_url: 'https://xvision.app/'
     company_logo: org-x
     location: 
-    date_start: '2021-07'
+    date_start: '2021-07-01'
     date_end: ''
     description: |2-
         * Developed a CE-marked 3D Deep Learning algorithm for the segmentation of nodules on lung CT scans that helps radiologists better identify these abnormalities whilst providin precise measurements.
@@ -38,8 +38,8 @@ experience:
     company_url: 'https://xvision.app/'
     company_logo: org-x
     location:
-    date_start: '2020-03'
-    date_end: '2020-09'
+    date_start: '2020-03-01'
+    date_end: '2020-09-01'
     description: |2-
         * Conducted interdisciplinary work with radiologists towards building a robust and time-efficient AI model for the detection of intracranial haemorrhages meant for speeding up the triaging process.
         * Improved the generalization of the model by using a special data pre-processing technique and performed extensive data cleaning on anonymized brain CT scans of the order of terabytes.
