@@ -29,9 +29,9 @@ organizations:
     url: https://xvision.app/
 education:
   courses:
-    - course: BSc (Hons) Artificial Intelligence
+    - course: BSc (Hons) Artificial Intelligence with Industrial Experience
       institution: The University of Manchester
-      year: 2025
+      year: 2021 - 2025
 email: ""
 superuser: true
 highlight_name: true
