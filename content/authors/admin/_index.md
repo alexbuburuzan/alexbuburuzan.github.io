@@ -1,6 +1,6 @@
 ---
 title: Alexandru-Stefan Buburuzan
-role: AI student at The University of Manchester
+role: AI student | Junior Data Scientist
 avatar_filename: avatar.png
 bio: Short bio
 interests:
