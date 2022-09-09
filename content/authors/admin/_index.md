@@ -2,7 +2,7 @@
 title: Alexandru-Stefan Buburuzan
 role: AI student | Junior Data Scientist
 avatar_filename: avatar.png
-bio: Incoming second-year student with an extensive background in algorithms, data structures and mathematics, highly passionate about AI.
+bio: AI Student at The University of Manchester | Junior Data Scientist at XVision
 interests:
   - Artificial Intelligence
   - Machine Learning
@@ -37,4 +37,8 @@ email: ""
 superuser: true
 highlight_name: true
 ---
+Incoming second-year student with an extensive background in algorithms, data structures and mathematics, highly passionate about AI.
+
+
+
 Work in progress 👷🏗️
