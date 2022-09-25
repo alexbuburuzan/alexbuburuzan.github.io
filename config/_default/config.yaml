@@ -4,7 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: Alexandru-Stefan Buburuzan # Website name
-baseURL: 'https://alexandrububuruzan.netlify.app/' # Website URL
+baseURL: 'https://alexandrububuruzan.com/' # Website URL
 
 ############################
 ## LANGUAGE
