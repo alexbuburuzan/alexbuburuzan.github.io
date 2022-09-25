@@ -25,7 +25,7 @@ experience:
   - title: Research Engineer
     company: Rayscape
     company_url: 'https://rayscape.ai/'
-    company_logo: 
+    company_logo: "rayscape.jpeg"
     location: 
     date_start: '2021-07-01'
     date_end: ''
@@ -37,7 +37,7 @@ experience:
   - title: Machine Learning Intern
     company: Rayscape
     company_url: "https://rayscape.ai/"
-    company_logo: 
+    company_logo: "rayscape.jpeg"
     location:
     date_start: '2020-03-01'
     date_end: '2020-09-01'
