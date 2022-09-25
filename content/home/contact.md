@@ -25,7 +25,7 @@ content:
       captcha: true
 
   # Contact details (edit or remove options as required)
-  email: buburuzan08@gmail.com
+  # email: buburuzan08@gmail.com
   # phone: 888 888 88 88
   # address:
   #   street: 450 Serra Mall
