@@ -35,6 +35,18 @@ item:
     title: EEML Summer School
     url: ''
 
+item:
+  - certificate_url: https://1drv.ms/b/s!AoFjXJpZ5_BnvjouzQIKR6jKyybX
+    date_end: ''
+    date_start: '2022-07-01'
+    description: |2-
+      * Attended lectures and tutorials on Deep Learning Theory, Reinforcement Learning, Computer Vision, Explainability, Graph Neural Networks, Speech Recognition, NLP, Causality.
+      * Mentored by one of the creators of Vision Transformers (ViT).
+    organization: EEML
+    organization_url: https://www.eeml.eu/
+    title: EEML Summer School
+    url: ''
+
 design:
   columns: '2'
 ---
