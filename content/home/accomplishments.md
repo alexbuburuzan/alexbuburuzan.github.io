@@ -35,7 +35,6 @@ item:
     title: EEML Summer School
     url: ''
 
-item:
   - certificate_url: https://1drv.ms/b/s!AoFjXJpZ5_BnvjouzQIKR6jKyybX
     date_end: ''
     date_start: '2022-07-01'
