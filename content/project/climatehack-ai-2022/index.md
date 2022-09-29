@@ -8,7 +8,7 @@ links:
   - url: https://github.com/BuburuzanAlexandru/climatehack
     name: GitHub
 image:
-  filename: convlstm.drawio.png
+  filename: featured.png
   focal_point: Smart
   preview_only: false
   caption: ""
