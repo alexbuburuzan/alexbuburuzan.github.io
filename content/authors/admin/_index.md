@@ -2,7 +2,7 @@
 title: Alexandru-Stefan Buburuzan
 role: AI student | Research Engineer
 avatar_filename: avatar.png
-bio: AI Student at The University of Manchester | Junior Data Scientist at XVision
+bio: AI Student at The University of Manchester | Research Engineer at Rayscape
 interests:
   - Artificial Intelligence
   - Machine Learning
@@ -37,6 +37,4 @@ email: ""
 superuser: true
 highlight_name: true
 ---
-Incoming second-year student with an extensive background in algorithms, data structures and mathematics, highly passionate about AI.
-
-Work in progress 👷🏗️
+Second-year student with an extensive background in algorithms, data structures and mathematics, highly passionate about AI.
