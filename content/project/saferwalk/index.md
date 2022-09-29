@@ -7,7 +7,7 @@ links:
   - url: https://github.com/BuburuzanAlexandru
     name: GitHub
 image:
-  filename: crime_data_clustering.png
+  filename: featured.png
   focal_point: Smart
   preview_only: false
 ---
