@@ -22,15 +22,6 @@ date_format: Jan 2006
 #   `title`, `organization`, and `date_start` are the required parameters.
 #   Leave other parameters empty if not required.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
-item:
-  - certificate_url:
-    date_end: ''
-    date_start: '2022-09-01'
-    description: ''Attended lectures on Interpretability, Graph Neural Networks, Medical Image Analysis, Causal Inference, Timeseries Forecasting.
-    organization: CCAIM
-    organization_url: https://ccaim.cam.ac.uk/
-    title: Cambridge Centre for AI in Medicine Summer School
-    url: ''
 
 item:
   - certificate_url: https://1drv.ms/b/s!AoFjXJpZ5_BnvjouzQIKR6jKyybX
