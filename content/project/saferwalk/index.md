@@ -3,8 +3,6 @@ title: SaferWalk
 date: 2022-09-29T13:13:05.625Z
 draft: false
 featured: false
-tags:
-  - Clustering
 links:
   - url: https://github.com/BuburuzanAlexandru
     name: GitHub

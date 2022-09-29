@@ -30,7 +30,7 @@ experience:
     date_start: '2021-07-01'
     date_end: ''
     description: |2-
-        * Developed a CE-marked 3D Deep Learning algorithm for the segmentation of nodules on lung CT scans that helps radiologists from over 100 medical institutions and 5 countries fare better at diagnosing lung cancer by providing precise measurements.
+        * Developed a CE-marked 3D Deep Learning algorithm for the segmentation of nodules on lung CT scans that helps radiologists from over 100 medical institutions and 5 countries better identify these abnormalities whilst providing precise measurements.
         * Decreased the error of the predicted measurements (L1) by a factor of 2 compared to the previous model by using a decoder-style sub-network which exploits pre-existing feature maps and implements a segmentation refinement mechanism.
         * Improved the metrics of a nodule malignancy classification algorithm by 3% using Vision Transformers.
 

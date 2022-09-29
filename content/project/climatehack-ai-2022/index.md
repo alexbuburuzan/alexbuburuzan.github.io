@@ -4,8 +4,8 @@ date: 2022-09-29T13:23:58.692Z
 draft: false
 featured: false
 tags:
-  - Deep Learning
-  - Computer Vision
+  - DeepLearning
+  - ComputerVision
 categories: []
 links:
   - url: https://github.com/BuburuzanAlexandru/climatehack

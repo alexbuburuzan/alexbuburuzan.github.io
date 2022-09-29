@@ -29,10 +29,6 @@ content:
       tag: '*'
     - name: Deep Learning
       tag: Deep Learning
-    - name: Computer Vision
-      tag: Computer Vision
-    - name: Clustering
-      tag: Clustering
     - name: Other
       tag: Demo
 

@@ -23,22 +23,10 @@ date_format: Jan 2006
 #   Leave other parameters empty if not required.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 item:
-  - certificate_url:
-    date_end: ''
-    date_start: '2022-09-01'
-    description: ''Attended lectures on Interpretability, Graph Neural Networks, Medical Image Analysis, Causal Inference, Timeseries Forecasting.
-    organization: CCAIM
-    organization_url: https://ccaim.cam.ac.uk/
-    title: Cambridge Centre for AI in Medicine Summer School
-    url: ''
-
-item:
   - certificate_url: https://1drv.ms/b/s!AoFjXJpZ5_BnvjouzQIKR6jKyybX
     date_end: ''
     date_start: '2022-07-01'
-    description: |2-
-      * Attended lectures and tutorials on Deep Learning Theory, Reinforcement Learning, Computer Vision, Explainability, Graph Neural Networks, Speech Recognition, NLP, Causality.
-      * Mentored by one of the creators of Vision Transformers (ViT).
+    description: 'Attended lectures and tutorials on Deep Learning Theory, Reinforcement Learning, Computer Vision, Explainability, Graph Neural Networks, Speech Recognition, NLP, Causality.'
     organization: EEML
     organization_url: https://www.eeml.eu/
     title: EEML Summer School
