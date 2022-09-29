@@ -10,7 +10,7 @@ headless: true
 weight: 50
 
 # Note: `&shy;` is used to add a 'soft' hyphen in a long heading.
-title: 'Courses'
+title: 'Summer Schools'
 subtitle:
 
 # Date format
@@ -32,6 +32,7 @@ item:
     title: Cambridge Centre for AI in Medicine Summer School
     url: ''
 
+item:
   - certificate_url: https://1drv.ms/b/s!AoFjXJpZ5_BnvjouzQIKR6jKyybX
     date_end: ''
     date_start: '2022-07-01'
