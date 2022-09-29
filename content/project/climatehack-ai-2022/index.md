@@ -3,7 +3,8 @@ title: ClimateHack.ai 2022
 date: 2022-09-29T13:23:58.692Z
 draft: false
 featured: false
-tags: []
+tags:
+  - DeepLearning;ComputerVision;
 links:
   - url: https://github.com/BuburuzanAlexandru/climatehack
     name: GitHub
