@@ -6,8 +6,7 @@ featured: false
 tags:
   - DeepLearning
   - ComputerVision
-categories:
-  - DeepLearning
+categories: []
 links:
   - url: https://github.com/BuburuzanAlexandru/climatehack
     name: GitHub
