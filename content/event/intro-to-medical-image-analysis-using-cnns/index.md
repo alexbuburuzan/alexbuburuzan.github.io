@@ -22,3 +22,7 @@ image:
 ## C﻿onvolutional Neural Networks
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSeVKNR1EP_-Ffm5k1Ce4p5AWQMHd9F-wrg8rWOi44juYbAvD121zMbYhC-_RJYbytROw2MBDUchHgy/embed?start=false&loop=false&delayms=3000" frameborder="0" width="647" height="400" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+#### Organ Classification using CNNs colab
+
+<a href="bit.ly/CNN-MUDS" style="color: purple;">bit.ly/CNN-MUDS</a>
