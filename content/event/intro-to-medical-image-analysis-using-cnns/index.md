@@ -25,4 +25,4 @@ image:
 
 #### Organ Classification using CNNs colab
 
-<a href="https://bit.ly/CNN-MUDS" style="color: purple;">bit.ly/CNN-MUDS</a>
+<a href="https://bit.ly/CNN-MUDS" style="color: purple;" target="_blank">bit.ly/CNN-MUDS</a>
