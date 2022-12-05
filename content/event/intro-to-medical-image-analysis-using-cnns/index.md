@@ -19,6 +19,6 @@ image:
   focal_point: Smart
   preview_only: false
 ---
-# C﻿onvolutional Neural Networks
+## C﻿onvolutional Neural Networks
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSeVKNR1EP_-Ffm5k1Ce4p5AWQMHd9F-wrg8rWOi44juYbAvD121zMbYhC-_RJYbytROw2MBDUchHgy/embed?start=false&loop=false&delayms=3000" frameborder="0" width="1280" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSeVKNR1EP_-Ffm5k1Ce4p5AWQMHd9F-wrg8rWOi44juYbAvD121zMbYhC-_RJYbytROw2MBDUchHgy/embed?start=false&loop=false&delayms=3000" frameborder="0" width="647" height="400" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
