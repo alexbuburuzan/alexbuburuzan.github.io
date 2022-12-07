@@ -24,7 +24,7 @@ date_format: Jan 2006
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 
 item:
-  - certificate_url:
+  - certificate_url: https://1drv.ms/b/s!AoFjXJpZ5_BnyAK57wqngRc6yGg8?e=87ToZH
     date_end: ''
     date_start: '2022-09-01'
     description: |2-
