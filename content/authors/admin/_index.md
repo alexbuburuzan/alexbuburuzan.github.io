@@ -1,5 +1,5 @@
 ---
-title: Alexandru-Stefan Buburuzan
+title: Alexandru Buburuzan
 role: AI student | Research Engineer
 avatar_filename: avatar.png
 bio: AI Student at The University of Manchester | Research Engineer at Rayscape
@@ -22,7 +22,7 @@ social:
     link: https://github.com/BuburuzanAlexandru
   - icon: linkedin
     icon_pack: fab
-    link: https://www.linkedin.com/in/alexandru-stefan-buburuzan-41a8101a6/
+    link: https://www.linkedin.com/in/alexandru-buburuzan-41a8101a6/
 organizations:
   - name: The University of Manchester
     url: https://www.manchester.ac.uk/
