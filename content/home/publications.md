@@ -4,7 +4,7 @@ widget_id: Publications
 headless: true
 weight: 90
 title: Publications
-subtitle: Currently under review.
+subtitle:
 content:
   filters:
     folders:
