@@ -17,15 +17,15 @@ social:
   - icon: linkedin
     icon_pack: fab
     link: https://www.linkedin.com/in/alexandru-buburuzan-41a8101a6/
-  - icon: github
-    icon_pack: fab
-    link: https://github.com/BuburuzanAlexandru
   - icon: google-scholar
     icon_pack: ai
     link: https://scholar.google.com/citations?user=aHC5GdAAAAAJ&hl=en&oi=ao
-  - icon: twitter
+  - icon: github
     icon_pack: fab
-    link: https://twitter.com/ABuburuzan
+    link: https://github.com/BuburuzanAlexandru
+  # - icon: twitter
+  #   icon_pack: fab
+  #   link: https://twitter.com/ABuburuzan
 organizations:
   - name: The University of Manchester
     url: https://www.manchester.ac.uk/
