@@ -41,12 +41,6 @@ image:
   filename: figure.png
   focal_point: Smart
   preview_only: false
-  caption: COVID-19 quantification judgement process (left) compared to the circle
-    size comparison problem (right). In both cases, the apparent proportion of
-    COVID-19 involvement (red) in relation to total lung area (blue) appears
-    greater in the bottom examples. This is due to the overinfluence of a
-    primary linear dimension (1D segment ratio = 80%) that is often
-    insufficiently adjusted to the 2D context (2D circle ratio = 60%). This
-    leads to an overestimation of the perceived percentages.
+  caption: ""
 date: 2023-03-26T18:00:46.016Z
 ---
