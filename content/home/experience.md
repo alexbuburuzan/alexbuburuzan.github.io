@@ -22,6 +22,15 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
+  - title: Research Engineer Intern
+    company: Five AI
+    company_url: 'https://www.five.ai/'
+    company_logo:
+    location: 
+    date_start: '2023-06-19'
+    date_end: '2023-09-09'
+    description: |2-
+        * Incoming intern on scene understanding for self-driving cars.
   - title: Research Engineer
     company: Rayscape
     company_url: 'https://rayscape.ai/'
@@ -31,8 +40,6 @@ experience:
     date_end: ''
     description: |2-
         * Developed a CE-marked 3D Deep Learning algorithm for the segmentation of nodules on lung CT scans that helps radiologists from over 100 medical institutions and 5 countries fare better at diagnosing lung cancer by providing precise measurements.
-        * Decreased the error of the predicted measurements (L1) by a factor of 2 compared to the previous model by using a decoder-style sub-network which exploits pre-existing feature maps and implements a segmentation refinement mechanism.
-        * Improved the metrics of a nodule malignancy classification algorithm by 3% using Vision Transformers.
 
   - title: Machine Learning Intern
     company: Rayscape
@@ -43,7 +50,6 @@ experience:
     date_end: '2020-09-01'
     description: |2-
         * Conducted interdisciplinary work with radiologists towards building a robust and time-efficient AI model for the detection of intracranial haemorrhages meant for speeding up the triaging process.
-        * Developed three Computer Vision algorithms as part of my initial training: lung segmentation (U-Net), pathology classification (CNN classifiers) and foreign objects detection (Faster R-CNN) on X-ray scans.
 
 design:
   columns: '2'
