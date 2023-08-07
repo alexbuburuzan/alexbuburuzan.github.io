@@ -24,6 +24,17 @@ date_format: Jan 2006
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 
 item:
+  - certificate_url: https://1drv.ms/b/s!AoFjXJpZ5_Bn1maUAKmOpE8N5LH9
+    date_end: ''
+    date_start: '2023-07-01'
+    description: |2-
+      * Attended lectures on Computer Vision, Graph Neural Networks, Medical Image Analysis.
+    organization: OxML
+    organization_url: https://www.oxfordml.school/
+    title: Oxford Machine Learning Summer School
+    url: ''
+
+item:
   - certificate_url: https://1drv.ms/b/s!AoFjXJpZ5_BnyAK57wqngRc6yGg8?e=87ToZH
     date_end: ''
     date_start: '2022-09-01'

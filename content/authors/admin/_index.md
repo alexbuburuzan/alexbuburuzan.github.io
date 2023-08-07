@@ -40,4 +40,4 @@ email: ""
 superuser: true
 highlight_name: true
 ---
-Second-year student with an extensive background in algorithms, data structures and mathematics, highly passionate about AI.
+Second-year student with an extensive background in Computer Vision, highly passionate about AI.

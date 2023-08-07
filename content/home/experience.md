@@ -28,14 +28,15 @@ experience:
     company_logo:
     location: 
     date_start: '2023-06-19'
-    date_end: '2023-09-09'
-    description: Incoming intern on scene understanding for self-driving cars.
+    date_end: 
+    description: Working on on scene understanding for self-driving cars.
   - title: Research Engineer
     company: Rayscape
     company_url: 'https://rayscape.ai/'
     company_logo:
     location: 
     date_start: '2021-07-01'
+    date_end: '2023-06-01'
     date_end: ''
     description: Developed a CE-marked 3D Deep Learning algorithm for the segmentation of nodules on lung CT scans that helps radiologists from over 100 medical institutions and 5 countries fare better at diagnosing lung cancer by providing precise measurements.
 
