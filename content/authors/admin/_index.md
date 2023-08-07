@@ -37,8 +37,4 @@ email: ""
 superuser: true
 highlight_name: true
 ---
-<<<<<<< HEAD
 Second-year student with an extensive background in Computer Vision, highly passionate about AI.
-=======
-Second-year student with an extensive background in computer vision, currently working on scene understanding for self-driving cars.
->>>>>>> 4f86af2093407497aadcee96738b364f43b2d00d
