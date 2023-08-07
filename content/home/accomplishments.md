@@ -34,7 +34,6 @@ item:
     title: Oxford Machine Learning Summer School
     url: ''
 
-item:
   - certificate_url: https://1drv.ms/b/s!AoFjXJpZ5_BnyAK57wqngRc6yGg8?e=87ToZH
     date_end: ''
     date_start: '2022-09-01'
