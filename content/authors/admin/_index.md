@@ -1,8 +1,8 @@
 ---
 title: Alexandru Buburuzan
-role: AI student | Research Engineer
+role: AI student | Research Engineer Intern
 avatar_filename: avatar.png
-bio: AI Student at The University of Manchester | Research Engineer at Rayscape
+bio: Research Engineer Intern at FiveAI | AI Student at The University of Manchester
 interests:
   - Artificial Intelligence
   - Machine Learning
@@ -23,14 +23,11 @@ social:
   - icon: github
     icon_pack: fab
     link: https://github.com/BuburuzanAlexandru
-  # - icon: twitter
-  #   icon_pack: fab
-  #   link: https://twitter.com/ABuburuzan
 organizations:
   - name: The University of Manchester
     url: https://www.manchester.ac.uk/
-  - name: Rayscape
-    url: https://rayscape.ai/
+  - name: FiveAI
+    url: https://www.five.ai/research
 education:
   courses:
     - course: BSc (Hons) Artificial Intelligence with Industrial Experience
@@ -40,4 +37,8 @@ email: ""
 superuser: true
 highlight_name: true
 ---
+<<<<<<< HEAD
 Second-year student with an extensive background in Computer Vision, highly passionate about AI.
+=======
+Second-year student with an extensive background in computer vision, currently working on scene understanding for self-driving cars.
+>>>>>>> 4f86af2093407497aadcee96738b364f43b2d00d
