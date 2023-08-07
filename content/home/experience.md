@@ -30,6 +30,7 @@ experience:
     date_start: '2023-06-19'
     date_end: 
     description: Working on on scene understanding for self-driving cars.
+
   - title: Research Engineer
     company: Rayscape
     company_url: 'https://rayscape.ai/'
