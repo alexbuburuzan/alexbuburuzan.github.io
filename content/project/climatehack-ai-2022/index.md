@@ -8,7 +8,7 @@ tags:
   - Computer Vision
 categories: []
 links:
-  - url: https://github.com/BuburuzanAlexandru/climatehack
+  - url: https://github.com/alexbuburuzan/climatehack
     name: GitHub
 image:
   filename: featured.png

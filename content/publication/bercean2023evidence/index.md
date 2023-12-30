@@ -4,17 +4,17 @@ title: "Evidence of a cognitive bias in the quantification of COVID-19 with CT:
 publication_types:
   - "2"
 authors:
-  - Bogdan A. Bercean
+  - Bogdan Bercean
   - Andreea Birhala
-  - Paula G. Ardelean
+  - Paula Ardelean
   - Ioana Barbulescu
-  - Marius M. Benta
-  - Cristina D. Rasadean
+  - Marius Benta
+  - Cristina Rasadean
   - Dan Costachescu
   - Cristian Avramescu
   - Andrei Tenescu
   - Stefan Iarca
-  - Alexandru S. Buburuzan
+  - Alexandru Buburuzan
   - Marius Marcu & Florin Birsasteanu
 doi: https://doi.org/10.1038/s41598-023-31910-3
 publication: Nature Scientific Reports

@@ -6,7 +6,7 @@ featured: false
 tags:
   - Clustering
 links:
-  - url: https://github.com/BuburuzanAlexandru
+  - url: https://github.com/alexbuburuzan
     name: GitHub
 image:
   filename: featured.png

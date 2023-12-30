@@ -38,7 +38,7 @@ item:
     date_end: ''
     date_start: '2022-09-01'
     description: |2-
-      * Attended lectures on Interpretability, Graph Neural Networks, Medical Image Analysis, Causal Inference, Timeseries Forecasting.
+      * Attended lectures on Interpretability, Graph Neural Networks, Causal Inference, Timeseries Forecasting.
     organization: CCAIM
     organization_url: https://ccaim.cam.ac.uk/
     title: Cambridge Centre for AI in Medicine Summer School
@@ -57,5 +57,5 @@ item:
     url: ''
 
 design:
-  columns: '2'
+  columns: '1'
 ---

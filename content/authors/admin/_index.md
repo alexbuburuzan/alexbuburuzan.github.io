@@ -22,7 +22,7 @@ social:
     link: https://scholar.google.com/citations?user=aHC5GdAAAAAJ&hl=en&oi=ao
   - icon: github
     icon_pack: fab
-    link: https://github.com/BuburuzanAlexandru
+    link: https://github.com/alexbuburuzan
 organizations:
   - name: The University of Manchester
     url: https://www.manchester.ac.uk/
