@@ -37,4 +37,4 @@ email: ""
 superuser: true
 highlight_name: true
 ---
-Second-year student with an extensive background in Computer Vision, highly passionate about AI.
+Incoming third-year student with an extensive background in Computer Vision, highly passionate about AI.
