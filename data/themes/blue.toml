@@ -17,5 +17,5 @@ name = "Blue"
   link_decoration = "underline"
 
   # Home sections
-  home_section_odd = "#eaf1f5"
+  home_section_odd = "#f6f8f9"
   home_section_even = "#ffffff"
