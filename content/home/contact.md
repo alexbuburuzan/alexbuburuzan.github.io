@@ -16,16 +16,16 @@ content:
   autolink: true
 
   # Email form provider
-  form:
-    provider: netlify
-    formspree:
-      id:
-    netlify:
-      # Enable CAPTCHA challenge to reduce spam?
-      captcha: true
+  # form:
+  #   provider: netlify
+  #   formspree:
+  #     id:
+  #   netlify:
+  #     # Enable CAPTCHA challenge to reduce spam?
+  #     captcha: true
 
   # Contact details (edit or remove options as required)
-  # email: buburuzan08@gmail.com
+  email: buburuzan08 [at] gmail [dot] com
   # phone: 888 888 88 88
   # address:
   #   street: 450 Serra Mall
