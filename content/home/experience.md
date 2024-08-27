@@ -27,8 +27,8 @@ experience:
     company_logo: five-logo
     location: Cambridge, UK
     date_start: '2023-06-19'
-    date_end: 
-    description: Working on scene understanding for self-driving cars.
+    date_end: '2024-06-26'
+    description: Implemented explainability and model interpretability techniques in multimodal fusion for 3D object detection in autonomous driving.
 
   - title: Research Engineer
     company: Rayscape
