@@ -28,7 +28,7 @@ experience:
     location: Cambridge, UK
     date_start: '2023-06-19'
     date_end: '2024-06-26'
-    description: Implemented explainability and model interpretability techniques in multimodal fusion for 3D object detection in autonomous driving.
+    description: Diffusion models for scene editing and multimodal sensor fusion
 
   - title: Research Engineer
     company: Rayscape
@@ -37,7 +37,7 @@ experience:
     location: Remote
     date_start: '2021-07-01'
     date_end: '2023-06-01'
-    description: Developed a CE-marked 3D Deep Learning algorithm for the segmentation of nodules on lung CT scans that helps radiologists from over 100 medical institutions and 5 countries fare better at diagnosing lung cancer by providing precise measurements.
+    description: Developed a CE-marked algorithm for lung nodule segmentation, deployed in over 100 hospitals.
 
   - title: Machine Learning Intern
     company: Rayscape

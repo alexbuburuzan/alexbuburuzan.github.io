@@ -36,4 +36,5 @@ email: ""
 superuser: true
 highlight_name: true
 ---
-Incoming third-year student with an extensive background in Computer Vision, highly passionate about AI.
+Third-year AI undergraduate with a strong focus on Computer Vision and Multimodal Perception.
+President of the [Manchester University Data Science Society](https://uomdss.com) and Campus Coordinator for [GirlsWhoML](https://girlswhoml.com).
