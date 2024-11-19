@@ -4,9 +4,8 @@ role: AI student
 avatar_filename: avatar.png
 bio: AI Student at The University of Manchester
 interests:
-  - Machine Learning
   - Computer Vision
-  - Machine Perception
+  - Multimodal Perception
   - Autonomous Driving
   - Medical Image Analysis
 social:
