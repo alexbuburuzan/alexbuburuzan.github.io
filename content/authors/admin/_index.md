@@ -36,4 +36,4 @@ superuser: true
 highlight_name: true
 ---
 Third-year AI undergraduate with a strong focus on Computer Vision and Multimodal Perception.
-President of the [Manchester University Data Science Society](https://uomdss.com) and Campus Coordinator for [GirlsWhoML](https://girlswhoml.com).
+President of the [Manchester University Data Science and AI Society](https://uomdss.com) and Campus Coordinator for [GirlsWhoML](https://girlswhoml.com).
