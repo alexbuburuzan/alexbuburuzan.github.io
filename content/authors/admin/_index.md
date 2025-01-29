@@ -9,11 +9,11 @@ interests:
   - Autonomous Driving
   - Medical Image Analysis
 social:
-  - icon: envelope
-    icon_pack: fas
-    link: /#contact
-    display:
-      header: false
+  # - icon: envelope
+  #   icon_pack: fas
+  #   link: /#contact
+  #   display:
+  #     header: false
   - icon: linkedin
     icon_pack: fab
     link: https://www.linkedin.com/in/alexbubu/
@@ -25,7 +25,7 @@ social:
     link: https://github.com/alexbuburuzan
   - icon: file-alt  # CV icon
     icon_pack: fas
-    url: resume.pdf
+    link: resume.pdf
 organizations:
   - name: The University of Manchester
     url: https://www.manchester.ac.uk/
