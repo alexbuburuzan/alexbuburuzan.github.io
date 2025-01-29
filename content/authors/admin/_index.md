@@ -23,6 +23,9 @@ social:
   - icon: github
     icon_pack: fab
     link: https://github.com/alexbuburuzan
+  - icon: file-alt  # CV icon
+    icon_pack: fas
+    url: resume.pdf
 organizations:
   - name: The University of Manchester
     url: https://www.manchester.ac.uk/
