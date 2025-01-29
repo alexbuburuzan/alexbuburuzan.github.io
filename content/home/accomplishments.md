@@ -50,7 +50,7 @@ item:
     date_start: '2022-07-01'
     description: |2-
       * Attended lectures and tutorials on Deep Learning Theory, Reinforcement Learning, Computer Vision, Explainability, Graph Neural Networks, Speech Recognition, NLP, Causality.
-      * Mentored by one of the creators of Vision Transformers (ViT).
+      * Mentored by Lucas Beyer, of the creators of Vision Transformers (ViT).
     organization: EEML
     organization_url: https://www.eeml.eu/
     title: EEML Summer School

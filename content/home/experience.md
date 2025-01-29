@@ -28,7 +28,7 @@ experience:
     location: Cambridge, UK
     date_start: '2023-06-19'
     date_end: '2024-06-26'
-    description: Diffusion models for scene editing and multimodal sensor fusion
+    description: Diffusion models for scene editing and multimodal sensor fusion for 3D object detection.
 
   - title: Research Engineer
     company: Rayscape
