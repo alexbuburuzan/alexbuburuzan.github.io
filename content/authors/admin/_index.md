@@ -38,5 +38,5 @@ email: ""
 superuser: true
 highlight_name: true
 ---
-Third-year AI undergraduate with a strong focus on Computer Vision and Multimodal Perception.
-President of the [Manchester University Data Science and AI Society](https://uomdss.com) and Campus Coordinator for [GirlsWhoML](https://girlswhoml.com).
+I am Alex, a final-year AI undergrad, highly passionate about Computer Vision and Multimodal Perception.
+I currently lead the [Manchester University Data Science and AI Society](https://uomdss.com) and I am a campus coordinator for [GirlsWhoML](https://girlswhoml.com), working to make the ML space more inclusive.
