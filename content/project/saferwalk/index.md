@@ -6,7 +6,7 @@ featured: false
 tags:
   - Clustering
 links:
-  - url: https://github.com/alexbuburuzan
+  - url: https://github.com/alexbuburuzan/saferwalk
     name: GitHub
 image:
   filename: featured.png
