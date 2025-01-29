@@ -24,7 +24,7 @@ date_format: Jan 2006
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 
 item:
-  - certificate_url: https://1drv.ms/b/s!AoFjXJpZ5_Bn1maUAKmOpE8N5LH9
+  - certificate_url: https://drive.google.com/file/d/1b9ADLQ6Epo0nBKZRBRSq_9an0xQtweE3/view?usp=sharing
     date_end: ''
     date_start: '2023-07-01'
     description: |2-
@@ -34,7 +34,7 @@ item:
     title: Oxford Machine Learning Summer School
     url: ''
 
-  - certificate_url: https://1drv.ms/b/s!AoFjXJpZ5_BnyAK57wqngRc6yGg8?e=87ToZH
+  - certificate_url: https://drive.google.com/file/d/1b3Zde9eWgZul8G8si2dhRy1LZ0Tiaso9/view?usp=sharing
     date_end: ''
     date_start: '2022-09-01'
     description: |2-
@@ -44,8 +44,7 @@ item:
     title: Cambridge Centre for AI in Medicine Summer School
     url: ''
 
-
-  - certificate_url: https://1drv.ms/b/s!AoFjXJpZ5_BnvjouzQIKR6jKyybX
+  - certificate_url: https://drive.google.com/file/d/1b6WWhxDldn6QCKhdzafWR82LUPnTRAoY/view?usp=sharing
     date_end: ''
     date_start: '2022-07-01'
     description: |2-
