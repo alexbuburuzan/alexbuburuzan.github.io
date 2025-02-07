@@ -38,6 +38,6 @@ email: ""
 superuser: true
 highlight_name: true
 ---
-I'm Alex, a final-year AI undergraduate at The University of Manchester with a strong passion for Computer Vision and Multimodal Perception. Supervised by [Prof. Tim Cootes](https://scholar.google.com/citations?user=zhlk0OsAAAAJ&hl=en), I research counterfactual medical image generation using Diffusion Models. 
+I am Alex, a final-year AI undergraduate at The University of Manchester, working to advance spatial reasoning in machine perception by constructing and learning from reimagined worlds. My current research, supervised by [Prof. Tim Cootes](https://scholar.google.com/citations?user=zhlk0OsAAAAJ&hl=en), explores counterfactual medical image generation using diffusion models.
 
-My journey in Computer Vision began at 16, joining [Rayscape](https://rayscape.ai/), a medical imaging startup, followed by a research internship at [FiveAI](https://www.five.ai/research), where I worked on camera-lidar object inpainting in autonomous driving, supervised by [Dr. Romain Mueller](https://scholar.google.com/citations?user=6K_Z_9sAAAAJ&hl=en) and [Dr. Puneet Dokania](https://puneetkdokania.github.io/). I'm also a campus coordinator for [GirlsWhoML](https://girlswhoml.com), promoting inclusivity in ML.
+My journey in computer vision began at 16, joining [Rayscape](https://rayscape.ai/), a medical imaging startup, followed by a research internship at [FiveAI](https://www.five.ai/research) on camera-lidar object inpainting in autonomous driving, advised by [Dr. Romain Mueller](https://scholar.google.com/citations?user=6K_Z_9sAAAAJ&hl=en) and [Dr. Puneet Dokania](https://puneetkdokania.github.io/). I am a campus coordinator for [GirlsWhoML](https://girlswhoml.com), promoting inclusivity in ML.
