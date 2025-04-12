@@ -12,7 +12,7 @@ name = "Blue"
   menu_title = "#000"
 
   # Links
-  link = "#F78764"
+  link = "#558C8C"
   link_hover = "#000"
   link_decoration = "underline"
 
