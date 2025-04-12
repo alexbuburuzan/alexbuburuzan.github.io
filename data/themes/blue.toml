@@ -9,10 +9,10 @@ name = "Blue"
   menu_primary = "#e9f1f6"
   menu_text = "#000"
   menu_text_active = "#000"
-  menu_title = "#F68E5F"
+  menu_title = "#000"
 
   # Links
-  link = "#02182B"
+  link = "#F78764"
   link_hover = "#000"
   link_decoration = "underline"
 
