@@ -68,7 +68,7 @@ features:
   privacy_pack:
     enable: false
   repository:
-    url: 'https://github.com/alexbuburuzan/personal-website'
+    url: 'https://github.com/alexbuburuzan/alexbuburuzan.github.io'
     content_dir: content
     branch: main
   avatar:
