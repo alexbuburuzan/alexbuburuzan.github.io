@@ -38,6 +38,6 @@ email: ""
 superuser: true
 highlight_name: true
 ---
-👋 I am Alex, a final-year AI undergraduate at The University of Manchester, working to advance spatial reasoning in machine perception by constructing and learning from reimagined worlds. My current research, supervised by [Prof. Tim Cootes](https://scholar.google.com/citations?user=zhlk0OsAAAAJ&hl=en), explores counterfactual medical image generation using diffusion models.
+👋 I am Alex, a final-year AI undergraduate at The University of Manchester, working to advance spatial reasoning in machine perception by constructing and learning from reimagined worlds. My current research, supervised by [Prof. Tim Cootes](https://scholar.google.com/citations?user=zhlk0OsAAAAJ&hl=en), explores multimodal counterfactual generation using diffusion models.
 
-My journey in computer vision began at 16, joining [Rayscape](https://rayscape.ai/), a medical imaging startup, followed by a research internship at [FiveAI](https://www.five.ai/research) on camera-lidar object inpainting in autonomous driving, advised by [Dr. Romain Mueller](https://scholar.google.com/citations?user=6K_Z_9sAAAAJ&hl=en) and [Dr. Puneet Dokania](https://puneetkdokania.github.io/). I am a campus coordinator for [GirlsWhoML](https://girlswhoml.com), promoting inclusivity in ML.
+My journey in computer vision began at 16, joining [Rayscape](https://rayscape.ai/), a medical imaging startup, followed by a research internship at [FiveAI](https://www.five.ai/research) on camera-lidar object inpainting in autonomous driving, advised by [Dr. Romain Mueller](https://scholar.google.com/citations?user=6K_Z_9sAAAAJ&hl=en) and [Dr. Puneet Dokania](https://puneetkdokania.github.io/).
