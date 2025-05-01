@@ -17,7 +17,7 @@
   <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
   <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="images/your_twitter_banner_image.png">
+  <!-- <meta name="twitter:image" content="images/your_twitter_banner_image.png"> -->
   <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
   <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
@@ -129,7 +129,7 @@
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        MObI allows the insertion of objects represented by a single reference image, into RGB camera, lidar depth and internsity, jointly, conditioned on a 3D bounding box.
+        MObI allows the insertion of objects represented by a single reference image, into RGB camera, lidar depth and intensity, jointly, conditioned on a 3D bounding box.
       </h2>
     </div>
   </div>
@@ -158,20 +158,20 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
+      <div id="motivation-carousel" class="carousel results-carousel">
        <div class="item">
         <h1 class="title is-2">Motivation</h1>
         <!-- Your image here -->
-        <img src="mobi/comparison_with_pbe.jpg" alt="MY ALT TEXT"/>
+        <img src="mobi/comparison_with_pbe.jpg" alt="Comparison with PBE" class="carousel-image"/>
         <h2 class="subtitle has-text-centered">
-          First image description.
+          Object inpainting methods based on edit masks alone such as Paint-by-Example achieve high realism but can lead to surprising results because there are often multiplesemantically consistent ways to inpaint an object within a scene
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="mobi/180flip.jpg" alt="MY ALT TEXT"/>
+        <img src="mobi/180flip.jpg" alt="180 degree flip demonstration" class="carousel-image"/>
         <h2 class="subtitle has-text-centered">
-          Second image description.
+          Methods based on 3D reconstruction such as NeuRAD have strong controllability but sometimes lead to low realism, especially for object viewpoints that have not been observed.
         </h2>
       </div>
   </div>
@@ -181,22 +181,22 @@
 <!-- End image carousel -->
 
 
-<!-- Image carousel -->
+<!-- Architecture section -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h1 class="title is-2">architecture</h1>
+      <h1 class="title is-2">Architecture</h1>
        <div class="item">
         <!-- Your image here -->
-        <img src="mobi/architecture.jpg" alt="MY ALT TEXT"/>
+        <img src="mobi/architecture.jpg" alt="MObI Architecture" class="full-width-image"/>
         <h2 class="subtitle has-text-centered">
-          Training pipeline of MObI.
+          We extend Paint-by-Example, a reference-based image inpainting method, to include bounding box conditioning and to jointly generate camera and lidar perception inputs.
         </h2>
       </div>
 </div>
 </div>
 </section>
-<!-- End image carousel -->
+<!-- End architecture section -->
 
 
 <!-- Image carousel -->
@@ -207,16 +207,23 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="mobi/replacement_results.jpg" alt="MY ALT TEXT"/>
+        <img src="mobi/replacement_results.jpg" alt="Replacement Results" class="carousel-image"/>
         <h2 class="subtitle has-text-centered">
-          First image description.
+          Object replacement results across multiple modalities, demonstrating realistic integration in both RGB camera and lidar data.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="mobi/compositing.jpg" alt="MY ALT TEXT"/>
+        <img src="mobi/compositing.jpg" alt="Spatial Compositing" class="carousel-image"/>
         <h2 class="subtitle has-text-centered">
-          Spatial compositing.
+          Spatial compositing of camera-lidar object inpainting. Challanging lighting conditions.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="mobi/open_world.jpg" alt="Open World" class="carousel-image"/>
+        <h2 class="subtitle has-text-centered">
+          MObI trained only on the pedestrian and car classes of nuScenes shows promising results in open-world scenarios, yet reverts to similar classes in extreme cases.
         </h2>
       </div>
   </div>
@@ -249,7 +256,7 @@
         <div class="content">
 
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>, adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>, adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
             <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
             <br> This license only applies to the website. Please check the official repository of this work for details on the terms and conditions that apply to the model and code.
@@ -260,6 +267,39 @@
     </div>
   </div>
 </footer>
+
+<!-- Add custom styles for image sizing -->
+<style>
+  .carousel-image {
+    max-width: 80%;
+    max-height: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+  }
+  
+  .full-width-image {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+  }
+  
+  .results-carousel .item {
+    margin: 0 10px;
+    overflow: hidden;
+  }
+  
+  /* Make carousels responsive */
+  @media screen and (max-width: 768px) {
+    .carousel-image, .full-width-image {
+      max-width: 95%;
+    }
+  }
+</style>
 
 <!-- Default Statcounter code for MObI https://alexbubu.com/mobi -->
 <script type="text/javascript">
@@ -274,6 +314,31 @@
   src="https://c.statcounter.com/13119078/0/af6eeb3b/1/" alt="Web Analytics"
   referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 <!-- End of Statcounter Code -->
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Initialize carousels with autoplay disabled
+    bulmaCarousel.attach('#results-carousel', {
+      autoplay: false
+    });
+    
+    bulmaCarousel.attach('#motivation-carousel', {
+      autoplay: false
+    });
+    
+    // If the carousels are already initialized elsewhere, try to stop them
+    var resultsCarousel = document.querySelector('#results-carousel');
+    var motivationCarousel = document.querySelector('#motivation-carousel');
+    
+    if (resultsCarousel && resultsCarousel.bulmaCarousel) {
+      resultsCarousel.bulmaCarousel.stop();
+    }
+    
+    if (motivationCarousel && motivationCarousel.bulmaCarousel) {
+      motivationCarousel.bulmaCarousel.stop();
+    }
+  });
+</script>
 
   </body>
   </html>
