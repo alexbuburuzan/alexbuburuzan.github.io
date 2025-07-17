@@ -18,7 +18,7 @@ authors:
   - Marius Marcu & Florin Birsasteanu
 doi: https://doi.org/10.1038/s41598-023-31910-3
 publication: Nature Scientific Reports
-abstract: >
+abstract: |
   Nature Scientific Reports
 
   Chest computed tomography (CT) has played a valuable, distinct role in
