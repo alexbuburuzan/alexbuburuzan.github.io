@@ -16,7 +16,7 @@ url_code: https://github.com/alexbuburuzan/MObI
 url_custom:
   - name: Project Page
     url: https://alexbubu.com/mobi
-date: 2025-01-07
+date: 2025-07-13
 draft: false
 featured: false
 image:
