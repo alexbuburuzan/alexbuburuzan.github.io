@@ -18,7 +18,10 @@ authors:
   - Marius Marcu & Florin Birsasteanu
 doi: https://doi.org/10.1038/s41598-023-31910-3
 publication: Nature Scientific Reports
-abstract: Chest computed tomography (CT) has played a valuable, distinct role in
+abstract: >
+  Nature Scientific Reports
+
+  Chest computed tomography (CT) has played a valuable, distinct role in
   the screening, diagnosis, and follow-up of COVID-19 patients. The
   quantification of COVID-19 pneumonia on CT has proven to be an important
   predictor of the treatment course and outcome of the patient although it
