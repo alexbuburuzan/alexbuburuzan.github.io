@@ -41,4 +41,4 @@ highlight_name: true
 
 My journey in computer vision began at 16, joining [Rayscape](https://rayscape.ai/), a medical imaging startup. I continued there for two years as a Research Engineer, with a focus on domain generalisation, before moving to [FiveAI](https://www.five.ai/research) where I worked on camera-lidar object inpainting in autonomous driving, advised by [Dr. Romain Mueller](https://scholar.google.com/citations?user=6K_Z_9sAAAAJ&hl=en), as a year-long Research Engineer Intern.
 
-I have recently graduated with a BSc in AI from The University of Manchester. My thesis, supervised by [Prof. Tim Cootes](https://scholar.google.com/citations?user=zhlk0OsAAAAJ&hl=en), focused multimodal counterfactual generation using diffusion models.
+I have recently graduated with a BSc in AI from The University of Manchester. My thesis, supervised by [Prof. Tim Cootes](https://scholar.google.com/citations?user=zhlk0OsAAAAJ&hl=en), focused on multimodal counterfactual generation using diffusion models.

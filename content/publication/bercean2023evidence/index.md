@@ -19,8 +19,7 @@ authors:
 doi: https://doi.org/10.1038/s41598-023-31910-3
 publication: Nature Scientific Reports
 abstract: |
-  *Nature Scientific Reports*
-  Overview: Radiologists overestimate COVID-19 lung involvement on CT, but AI support reduces this bias tenfold.
+  *Nature Scientific Reports* | Radiologists overestimate COVID-19 lung involvement on CT, but AI support reduces this bias tenfold.
 
   Chest computed tomography (CT) has played a valuable, distinct role in
   the screening, diagnosis, and follow-up of COVID-19 patients. The
