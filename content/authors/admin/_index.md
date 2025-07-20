@@ -1,7 +1,7 @@
 ---
 title: Alexandru Buburuzan
 role: Research Scientist Intern
-avatar_filename: avatar.jpg
+avatar_filename: avatar.png
 bio: Research Scientist Intern at FiveAI
 interests:
   - Computer Vision
@@ -39,6 +39,6 @@ highlight_name: true
 ---
 👋 I am Alex, a Research Scientist Intern at [FiveAI](https://www.five.ai/research), an autonomous driving company now part of Bosch, where I'm advised by [Dr. Puneet Dokania](https://puneetkdokania.github.io/).
 
-My journey in computer vision began at 16, joining [Rayscape](https://rayscape.ai/), a medical imaging startup. I continued there for two years as a Research Engineer, with a focus on domain generalisation, before moving to [FiveAI](https://www.five.ai/research) where I worked on camera-lidar object inpainting in autonomous driving, advised by [Dr. Romain Mueller](https://scholar.google.com/citations?user=6K_Z_9sAAAAJ&hl=en), as a year-long Research Engineer Intern.
+My journey in computer vision began at 16, joining [Rayscape](https://rayscape.ai/), a medical imaging startup. I later continued there for two years as a Research Engineer, with a focus on domain generalisation, before moving to [FiveAI](https://www.five.ai/research), in Cambridge. As a year-long Research Engineer Intern, I published work on multimodal sensor fusion and synthetic data generation for autonomous driving, adivised by [Dr. Romain Mueller](https://scholar.google.com/citations?user=6K_Z_9sAAAAJ&hl=en).
 
 I have recently graduated with a BSc in AI from The University of Manchester. My thesis, supervised by [Prof. Tim Cootes](https://scholar.google.com/citations?user=zhlk0OsAAAAJ&hl=en), focused on multimodal counterfactual generation using diffusion models.
