@@ -122,7 +122,7 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay muted loop height="100%" style="pointer-events: none;">
+      <video poster="" id="tree" autoplay muted loop playsinline height="100%" style="pointer-events: none;">
         <!-- Your video here -->
         <source src="mobi/teaser_video.mp4"
         type="video/mp4">
@@ -532,6 +532,29 @@
     
     if (motivationCarousel && motivationCarousel.bulmaCarousel) {
       motivationCarousel.bulmaCarousel.stop();
+    }
+    
+    // Ensure video plays on mobile devices
+    const video = document.getElementById('tree');
+    if (video) {
+      // Try to play the video
+      const playPromise = video.play();
+      
+      if (playPromise !== undefined) {
+        playPromise.catch(error => {
+          // Auto-play was prevented, try to play on first user interaction
+          console.log('Autoplay prevented, will play on user interaction');
+          
+          const playOnInteraction = function() {
+            video.play();
+            document.removeEventListener('touchstart', playOnInteraction);
+            document.removeEventListener('click', playOnInteraction);
+          };
+          
+          document.addEventListener('touchstart', playOnInteraction);
+          document.addEventListener('click', playOnInteraction);
+        });
+      }
     }
   });
 </script>
