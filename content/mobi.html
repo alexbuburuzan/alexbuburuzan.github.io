@@ -44,15 +44,14 @@
   <script src="js/bulma-slider.min.js"></script>
   <script src="js/index.js"></script>
 </head>
+
 <body>
-
-
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">🐳 MObI: Multimodal Object Inpainting Using Diffusion Models</h1>
+            <h1 class="title is-1 publication-title">🐳 MObI: <u>M</u>ultimodal <u>Ob</u>ject <u>I</u>npainting Using Diffusion Models</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -81,7 +80,7 @@
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
                         <a href="https://arxiv.org/pdf/2501.03173" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
+                        class="external-link button is-normal is-rounded is-outlined">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
                         </span>
@@ -92,7 +91,7 @@
                   <!-- Github link -->
                   <span class="link-block">
                     <a href="https://github.com/alexbuburuzan/MObI" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
+                    class="external-link button is-normal is-rounded is-outlined">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
@@ -103,7 +102,7 @@
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
                   <a href="https://arxiv.org/abs/2501.03173" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
+                  class="external-link button is-normal is-rounded is-outlined">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
                   </span>
@@ -123,13 +122,13 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
+      <video poster="" id="tree" autoplay muted loop height="100%" style="pointer-events: none;">
         <!-- Your video here -->
         <source src="mobi/teaser_video.mp4"
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        MObI allows the insertion of objects represented by a single reference image, into RGB camera, lidar depth and intensity, jointly, conditioned on a 3D bounding box.
+        MObI allows the insertion of objects represented by a single reference image, jointly, in both RGB camera and lidar modalities, conditioned on a 3D bounding box.
       </h2>
     </div>
   </div>
@@ -137,7 +136,7 @@
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
-<section class="hero is-light">
+<section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -154,31 +153,33 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
+<!-- Motivation section -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-2">Motivation</h2>
-      <div id="motivation-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="mobi/comparison_with_pbe.jpg" alt="Comparison with PBE" class="carousel-image"/>
-        <h2 class="subtitle has-text-centered">
-          Object inpainting methods based on edit masks alone such as Paint-by-Example achieve high realism but can lead to surprising results because there are often multiplesemantically consistent ways to inpaint an object within a scene
-        </h2>
+      <div class="columns">
+        <div class="column">
+          <div class="image-box">
+            <h2 class="subtitle has-text-centered">
+              Object inpainting methods based on edit masks alone such as Paint-by-Example achieve high realism but can lead to surprising results because there are often multiplesemantically consistent ways to inpaint an object within a scene
+            </h2>
+            <img src="mobi/comparison_with_pbe.jpg" alt="Comparison with PBE" class="full-width-image"/>
+          </div>
+        </div>
+        <div class="column">
+          <div class="image-box">
+            <h2 class="subtitle has-text-centered">
+              Methods based on 3D reconstruction such as NeuRAD have strong controllability but sometimes lead to low realism, especially for object viewpoints that have not been observed.
+            </h2>
+            <img src="mobi/180flip.jpg" alt="180 degree flip demonstration" class="full-width-image"/>
+          </div>
+        </div>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="mobi/180flip.jpg" alt="180 degree flip demonstration" class="carousel-image"/>
-        <h2 class="subtitle has-text-centered">
-          Methods based on 3D reconstruction such as NeuRAD have strong controllability but sometimes lead to low realism, especially for object viewpoints that have not been observed.
-        </h2>
-      </div>
+    </div>
   </div>
-</div>
-</div>
 </section>
-<!-- End image carousel -->
+<!-- End motivation section -->
 
 
 <!-- Architecture section -->
@@ -188,10 +189,12 @@
       <h2 class="title is-2">Architecture</h2>
        <div class="item">
         <!-- Your image here -->
-        <img src="mobi/architecture.jpg" alt="MObI Architecture" class="full-width-image"/>
-        <h2 class="subtitle has-text-centered">
-          We extend Paint-by-Example, a reference-based image inpainting method, to include bounding box conditioning and to jointly generate camera and lidar perception inputs.
-        </h2>
+        <div class="image-box">
+          <img src="mobi/architecture.jpg" alt="MObI Architecture" class="full-width-image"/>
+          <h2 class="subtitle has-text-centered">
+            We extend Paint-by-Example, a reference-based image inpainting method, to include bounding box conditioning and to jointly generate camera and lidar perception inputs.
+          </h2>
+        </div>
       </div>
 </div>
 </div>
@@ -199,60 +202,72 @@
 <!-- End architecture section -->
 
 
-<!-- Image carousel -->
+<!-- Results section -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-2">Results</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="mobi/replacement_results.jpg" alt="Replacement Results" class="carousel-image"/>
-        <h2 class="subtitle has-text-centered">
-          Object replacement results across multiple modalities, demonstrating realistic integration in both RGB camera and lidar data.
-        </h2>
+      <div class="item">
+        <div class="image-box">
+          <img src="mobi/replacement_results.jpg" alt="Replacement Results" class="full-width-image"/>
+          <h2 class="subtitle has-text-centered">
+            Object replacement results across multiple modalities, demonstrating realistic inpainting in both RGB camera and lidar data.
+          </h2>
+        </div>
       </div>
       <div class="item">
-        <!-- Your image here -->
-        <img src="mobi/compositing.jpg" alt="Spatial Compositing" class="carousel-image"/>
-        <h2 class="subtitle has-text-centered">
-          Spatial compositing of camera-lidar object inpainting. Challanging lighting conditions.
-        </h2>
+        <div class="image-box">
+          <img src="mobi/compositing.jpg" alt="Spatial Compositing" class="full-width-image"/>
+          <h2 class="subtitle has-text-centered">
+            Spatial compositing of camera-lidar object inpainting. Scene presents challenging lighting conditions.
+          </h2>
+        </div>
       </div>
+    </div>
   </div>
-</div>
-</div>
 </section>
-<!-- End image carousel -->
+<!-- End results section -->
 
-<!-- Discussion carousel -->
+<!-- Discussion section -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-2">Discussion</h2>
-      <!-- <div id="discussion-carousel" class="carousel results-carousel"> -->
       <div class="item">
-        <!-- Your image here -->
-        <img src="mobi/open_world.jpg" alt="Open World" class="carousel-image"/>
-        <h2 class="subtitle has-text-centered">
-          MObI trained only on the pedestrian and car classes of nuScenes shows promising results in open-world scenarios, yet reverts to similar classes in extreme cases.
-        </h2>
+        <div class="image-box">
+          <img src="mobi/open_world.jpg" alt="Open World" class="full-width-image"/>
+          <h2 class="subtitle has-text-centered">
+            MObI trained only on the pedestrian and car classes of nuScenes shows promising results in open-world scenarios, yet reverts to similar classes in extreme cases.
+          </h2>
+        </div>
       </div>
-  <!-- </div> -->
-</div>
-</div>
+    </div>
+  </div>
 </section>
-<!-- End image carousel -->
+<!-- End discussion section -->
+
+<!-- Paper poster -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+        <iframe  src="mobi/cvpr25_MObI.pdf" width="100%" height="580" class="responsive-iframe">
+            </iframe>
+      </div>
+    </div>
+</section>
+<!--End paper poster -->
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>
-        @article{buburuzan2025mobi,
-          title={MObI: Multimodal Object Inpainting Using Diffusion Models},
+        @inproceedings{buburuzan2025mobi,
+          title={Mobi: Multimodal object inpainting using diffusion models},
           author={Buburuzan, Alexandru and Sharma, Anuj and Redford, John and Dokania, Puneet K and Mueller, Romain},
-          journal={arXiv preprint arXiv:2501.03173},
+          booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
+          pages={1974--1984},
           year={2025}
         }
       </code></pre>
@@ -260,13 +275,11 @@
 </section>
 <!--End BibTex citation -->
 
-
-  <footer class="footer">
+<footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
-
           <p>
             This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>, adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
             <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
@@ -282,44 +295,173 @@
 
 <!-- Add custom styles for image sizing -->
 <style>
-  .carousel-image {
-    max-width: 80%;
-    max-height: 600px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 8px;
-  }
-  
   .full-width-image {
     width: 100%;
-    max-width: 1000px;
+    max-width: 90%;
     height: auto;
     display: block;
     margin: 0 auto;
-    border-radius: 8px;
+    border-radius: 0.5rem;
   }
   
-  .results-carousel .item {
-    margin: 0 10px;
-    overflow: hidden;
+  body {
+    font-family: "Palatino Linotype", "Palatino", "Times New Roman", serif !important;
+    line-height: 1.6 !important;
+    color: #333 !important;
   }
   
-  /* Make carousels responsive */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Palatino Linotype", "Palatino", "Times New Roman", serif !important;
+    font-weight: 400 !important;
+    color: #2c3e50 !important;
+  }
+  
+  .publication-authors {
+    font-family: "Palatino Linotype", "Palatino", "Times New Roman", serif !important;
+  }
+  
+  .title {
+    font-weight: 400 !important;
+    text-align: center !important;
+  }
+  
+  .subtitle {
+    font-weight: 400 !important;
+    color: #555 !important;
+  }
+  
+  .content p {
+    margin-bottom: 1.2em !important;
+    text-align: justify !important;
+    font-size: 1rem !important;
+  }
+  
+  .hero {
+    padding: 2rem 0 !important;
+  }
+  
+  .hero.is-small {
+    padding: 1.5rem 0 !important;
+  }
+  
+  /* Custom spacing for teaser video section */
+  .hero.teaser {
+    margin-top: -4rem !important;
+    margin-bottom: -2rem !important;
+  }
+  
+  .hero.teaser .subtitle {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  /* Subtle borders and backgrounds */
+  .hero.is-light {
+    background-color: #fafafa !important;
+    border-top: 1px solid #eee !important;
+    border-bottom: 1px solid #eee !important;
+  }
+  
+  /* Cleaner buttons */
+  .button.is-outlined {
+    border-color: #666 !important;
+    color: #666 !important;
+    transition: all 0.2s ease !important;
+  }
+  
+  .button.is-outlined:hover {
+    background-color: #666 !important;
+    color: white !important;
+  }
+  
+  /* Add more space between images and captions */
+  .carousel-image, .full-width-image {
+    margin-bottom: 1.5rem !important;
+  }
+  
+  /* Fix carousel dot overlap with captions */
+  .results-carousel {
+    margin-bottom: 2rem !important;
+  }
+  
+  .subtitle {
+    margin-bottom: 1.5rem !important;
+    text-align: center !important;
+    max-width: 90% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    font-size: 1.2rem !important;
+  }
+  
+  /* Make images in grid have same height */
+  .columns .column .full-width-image {
+    height: 25rem !important;
+    object-fit: contain !important;
+  }
+  
+  /* Box container for image and description */
+  .image-box {
+    border: 1px solid #000 !important;
+    border-radius: 0.5rem !important;
+    padding: 1rem !important;
+    margin-bottom: 2rem !important;
+    background-color: #fff !important;
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  
+  /* Ensure carousel items display properly */
+  .carousel .item {
+    display: block !important;
+  }
+  
+  /* Responsive iframe styling similar to images */
+  .responsive-iframe {
+    width: 100% !important;
+    height: 70vh !important;
+    min-height: 400px !important;
+    max-height: 800px !important;
+    border: none !important;
+    border-radius: 0.5rem !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+  }
+  
   @media screen and (max-width: 768px) {
-    .carousel-image, .full-width-image {
-      max-width: 95%;
-    }
-    
-    .abstract-content {
-      padding: 0 15px;
+    .responsive-iframe {
+      height: 60vh !important;
+      min-height: 250px !important;
     }
   }
   
-  /* Add default padding to abstract content */
-  .abstract-content {
-    padding: 0 10px;
+  @media screen and (max-width: 480px) {
+    .responsive-iframe {
+      height: 50vh !important;
+      min-height: 200px !important;
+    }
   }
+  
+  @media screen and (max-width: 360px) {
+    .responsive-iframe {
+      height: 45vh !important;
+      min-height: 150px !important;
+    }
+  }
+  
+  /* Ensure abstract section has proper mobile padding */
+  .section.hero.is-light {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .section.hero.is-light {
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
+  }
+  
+
 </style>
 
 <!-- Default Statcounter code for MObI https://alexbubu.com/mobi -->
