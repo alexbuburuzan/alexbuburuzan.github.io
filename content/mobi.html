@@ -251,10 +251,23 @@
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
-        <iframe  src="mobi/cvpr25_MObI.pdf" width="100%" height="580" class="responsive-iframe">
-            </iframe>
+      <div class="pdf-container">
+        <!-- Mobile-friendly PDF embed using PDF.js -->
+        <object data="mobi/cvpr25_MObI.pdf#toolbar=1&navpanes=0&scrollbar=1&page=1&view=FitH" 
+                type="application/pdf" 
+                class="responsive-pdf">
+          <div class="pdf-fallback">
+            <p>Your browser doesn't support PDF viewing. 
+               <a href="mobi/cvpr25_MObI.pdf" target="_blank" class="button is-outlined">
+                 <span class="icon"><i class="fas fa-download"></i></span>
+                 <span>Download PDF</span>
+               </a>
+            </p>
+          </div>
+        </object>
       </div>
     </div>
+  </div>
 </section>
 <!--End paper poster -->
 
@@ -410,6 +423,9 @@
     height: 100% !important;
     display: flex !important;
     flex-direction: column !important;
+    width: 90% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
   
   /* Ensure carousel items display properly */
@@ -417,35 +433,51 @@
     display: block !important;
   }
   
-  /* Responsive iframe styling similar to images */
-  .responsive-iframe {
+  /* Better PDF embedding */
+  .pdf-container {
     width: 100% !important;
     height: 70vh !important;
     min-height: 400px !important;
-    max-height: 800px !important;
-    border: none !important;
+    position: relative !important;
     border-radius: 0.5rem !important;
+    overflow: hidden !important;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
   }
   
+  .responsive-pdf {
+    width: 100% !important;
+    height: 100% !important;
+    border: none !important;
+  }
+  
+  .pdf-fallback {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 100% !important;
+    background-color: #f8f9fa !important;
+    text-align: center !important;
+    padding: 2rem !important;
+  }
+  
   @media screen and (max-width: 768px) {
-    .responsive-iframe {
-      height: 60vh !important;
+    .pdf-container {
+      height: 55vh !important;
       min-height: 250px !important;
     }
   }
   
   @media screen and (max-width: 480px) {
-    .responsive-iframe {
+    .pdf-container {
       height: 50vh !important;
       min-height: 200px !important;
     }
   }
   
   @media screen and (max-width: 360px) {
-    .responsive-iframe {
+    .pdf-container {
       height: 45vh !important;
-      min-height: 150px !important;
+      min-height: 180px !important;
     }
   }
   
