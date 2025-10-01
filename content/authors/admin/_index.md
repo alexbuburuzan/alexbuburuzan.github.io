@@ -1,8 +1,8 @@
 ---
 title: Alexandru Buburuzan
-role: Research Scientist Intern
+role: DPhil student, University of Oxford
 avatar_filename: avatar.png
-bio: Research Scientist Intern at FiveAI
+bio: DPhil student at University of Oxford
 interests:
   - Computer Vision
   - Multimodal Perception
@@ -26,8 +26,8 @@ social:
     icon_pack: fas
     link: resume.pdf
 organizations:
-  - name: FiveAI
-    url: https://www.five.ai/research
+  - name: alexbubu@robots.ox.ac.uk
+    url: mailto:alexbubu@robots.ox.ac.uk
 education:
   courses:
     - course: BSc (Hons) Artificial Intelligence with Industrial Experience
@@ -37,10 +37,8 @@ email: "alexbubu@robots.ox.ac.uk"
 superuser: true
 highlight_name: true
 ---
-👋 I am Alex, a Research Scientist Intern at [FiveAI](https://www.five.ai/research), an autonomous driving company now part of Bosch, where I'm advised by [Dr. Puneet Dokania](https://puneetkdokania.github.io/).
+I am Alex, a Research Scientist Intern at [FiveAI](https://www.five.ai/research), an autonomous driving company, advised by [Dr. Puneet Dokania](https://puneetkdokania.github.io/).
 
-I recently graduated with a BSc in AI from The University of Manchester. I completed my [dissertation](https://arxiv.org/pdf/2507.23058), supervised by [Prof. Tim Cootes](https://scholar.google.com/citations?user=zhlk0OsAAAAJ&hl=en), on counterfactual generation using diffusion inpainting models for diverse perceptual modalities (see [MObI](https://alexbubu.com/mobi) and [AnydoorMed](https://alexbubu.com/anydoormed)).
+I recently graduated with a BSc in AI from The University of Manchester. I completed my [dissertation](https://arxiv.org/pdf/2507.23058) supervised by [Prof. Tim Cootes](https://scholar.google.com/citations?user=zhlk0OsAAAAJ&hl=en) on counterfactual generation using diffusion inpainting models (see [MObI](https://alexbubu.com/mobi) and [AnydoorMed](https://alexbubu.com/anydoormed)).
 
-My journey in computer vision began at 16 when I joined [Rayscape](https://rayscape.ai/), a medical imaging startup. I later continued there for two years as a Research Engineer, with a focus on domain generalisation, before moving to [FiveAI](https://www.five.ai/research), in Cambridge. As a year-long Research Engineer Intern, I published work on multimodal sensor fusion and synthetic data generation for autonomous driving, advised by [Dr. Romain Mueller](https://scholar.google.com/citations?user=6K_Z_9sAAAAJ&hl=en).
-
-<strong>Contact:</strong> <a href="mailto:alexbubu@robots.ox.ac.uk">alexbubu@robots.ox.ac.uk</a>
+I began my computer vision journey at 16 at a medical imaging startup. I later joined [FiveAI](https://www.five.ai/research) as a year-long Research Engineer Intern publishing work on multimodal sensor fusion and synthetic data generation for autonomous driving advised by [Dr. Romain Mueller](https://scholar.google.com/citations?user=6K_Z_9sAAAAJ&hl=en).
