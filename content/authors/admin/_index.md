@@ -33,7 +33,7 @@ education:
     - course: BSc (Hons) Artificial Intelligence with Industrial Experience
       institution: The University of Manchester
       year: 2021 - 2025
-email: ""
+email: "alexbubu@robots.ox.ac.uk"
 superuser: true
 highlight_name: true
 ---
