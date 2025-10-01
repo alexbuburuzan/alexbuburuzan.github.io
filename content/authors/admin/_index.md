@@ -1,8 +1,8 @@
 ---
 title: Alexandru Buburuzan
-role: DPhil student, University of Oxford
+role: DPhil student, Oxford
 avatar_filename: avatar.png
-bio: DPhil student at University of Oxford
+bio: Phd student at University of Oxford
 interests:
   - Computer Vision
   - Multimodal Perception
@@ -26,10 +26,13 @@ social:
     icon_pack: fas
     link: resume.pdf
 organizations:
-  - name: alexbubu@robots.ox.ac.uk
+  - name: ✉ alexbubu@robots.ox.ac.uk
     url: mailto:alexbubu@robots.ox.ac.uk
 education:
   courses:
+    - course: DPhil (PhD) Autonomous Intelligent Machines and Systems
+      institution: University of Oxford
+      year: 2025 - 2029
     - course: BSc (Hons) Artificial Intelligence with Industrial Experience
       institution: The University of Manchester
       year: 2021 - 2025
@@ -37,7 +40,7 @@ email: "alexbubu@robots.ox.ac.uk"
 superuser: true
 highlight_name: true
 ---
-I am Alex, a Research Scientist Intern at [FiveAI](https://www.five.ai/research), an autonomous driving company, advised by [Dr. Puneet Dokania](https://puneetkdokania.github.io/).
+I am Alex, a Research Scientist Intern at [FiveAI](https://www.five.ai/research) in autonomous driving, advised by [Dr. Puneet Dokania](https://puneetkdokania.github.io/). I am joining University of Oxford as a fully-funded DPhil (PhD) student in [Autonomous Intelligent Machines and Systems](https://aims.robots.ox.ac.uk/students/).
 
 I recently graduated with a BSc in AI from The University of Manchester. I completed my [dissertation](https://arxiv.org/pdf/2507.23058) supervised by [Prof. Tim Cootes](https://scholar.google.com/citations?user=zhlk0OsAAAAJ&hl=en) on counterfactual generation using diffusion inpainting models (see [MObI](https://alexbubu.com/mobi) and [AnydoorMed](https://alexbubu.com/anydoormed)).
 
