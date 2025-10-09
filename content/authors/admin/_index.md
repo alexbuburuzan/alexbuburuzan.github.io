@@ -26,8 +26,8 @@ social:
     icon_pack: fas
     link: resume.pdf
 organizations:
-  - name: ✉ alexandru.buburuzan@eng.ox.ac.uk
-    url: mailto:alexandru.buburuzan@eng.ox.ac.uk
+  - name: ✉ alexbubu@robots.ox.ac.uk
+    url: mailto:alexbubu@robots.ox.ac.uk
 education:
   courses:
     - course: DPhil (PhD) Autonomous Intelligent Machines and Systems
@@ -36,7 +36,7 @@ education:
     - course: BSc (Hons) Artificial Intelligence with Industrial Experience
       institution: The University of Manchester
       year: 2021 - 2025
-email: "alexandru.buburuzan@eng.ox.ac.uk"
+email: "alexbubu@robots.ox.ac.uk"
 superuser: true
 highlight_name: true
 ---
