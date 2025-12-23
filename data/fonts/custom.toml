@@ -2,10 +2,10 @@
 name = "mine"
 
 # Optional Google font URL
-google_fonts = "family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800"
+google_fonts = "family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400"
 
 # Font families
-heading_font = "Cormorant Garamond"
-body_font = "EB Garamond"
+heading_font = "EB Garamond"
+body_font = "Libertinus Sans"
 nav_font = "Cormorant Garamond"
-mono_font = "EB Garamond"
+mono_font = "Libertinus+Sans"
