@@ -7,5 +7,5 @@ google_fonts = "family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libert
 # Font families
 heading_font = "EB Garamond"
 body_font = "Libertinus Sans"
-nav_font = "Cormorant Garamond"
-mono_font = "Libertinus+Sans"
+nav_font = "EB Garamond"
+mono_font = "EB Garamond"
