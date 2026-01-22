@@ -40,7 +40,7 @@ email: "alexbubu@robots.ox.ac.uk"
 superuser: true
 highlight_name: true
 ---
-I am Alex, a Research Scientist Intern at [FiveAI](https://www.five.ai/research), advised by [Dr. Puneet Dokania](https://puneetkdokania.github.io/). I have recently joined University of Oxford as a fully-funded DPhil (PhD) student in [Autonomous Intelligent Machines and Systems](https://aims.robots.ox.ac.uk/students/).
+I am Alex, a Research Scientist Intern at [FiveAI](https://www.five.ai/research), advised by [Dr. Puneet Dokania](https://puneetdokania.github.io/). I have recently joined University of Oxford as a fully-funded DPhil (PhD) student in [Autonomous Intelligent Machines and Systems](https://aims.robots.ox.ac.uk/students/).
 
 I graduated with a BSc in AI from The University of Manchester. I completed my [dissertation](https://arxiv.org/pdf/2507.23058) supervised by [Prof. Tim Cootes](https://scholar.google.com/citations?user=zhlk0OsAAAAJ&hl=en) on counterfactual generation using diffusion inpainting models (see [MObI](https://alexbubu.com/mobi) and [AnydoorMed](https://alexbubu.com/anydoormed)).
 
