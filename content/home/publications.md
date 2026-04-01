@@ -16,7 +16,7 @@ content:
     exclude_featured: false
     exclude_future: false
     exclude_past: false
-  count: 0
+  count: 3
   offset: 0
   order: desc
 design:
@@ -24,6 +24,4 @@ design:
   columns: "1"
 ---
 
-<!-- {{% callout note %}}
-Quickly discover relevant content by [filtering publications](./publication/).
-{{% /callout %}} -->
+{{< cta cta_text="See all publications" cta_link="publication/" cta_new_tab="false" >}}
