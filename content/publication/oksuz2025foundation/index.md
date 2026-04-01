@@ -8,7 +8,7 @@ authors:
   - Anthony Knittel
   - Yuhan Yao
   - Puneet K. Dokania
-doi: https://openreview.net/forum?id=E2L5J2O2Bk
+doi: https://doi.org/10.48550/arXiv.2512.00021
 publication: Transactions on Machine Learning Research
 abstract: |
   *TMLR in 2026 | Survery Certification |* Comprehensive review of 37 foundation-model-based approaches for trajectory planning in autonomous driving assessing openness and their inclusion in a novel taxonomy.
