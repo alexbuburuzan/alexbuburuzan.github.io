@@ -24,4 +24,3 @@ design:
   columns: "1"
 ---
 
-{{< cta cta_text="See all publications" cta_link="publication/" cta_new_tab="false" >}}
