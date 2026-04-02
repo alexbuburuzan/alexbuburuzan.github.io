@@ -14,8 +14,9 @@ publication_short: CVPR DDADS 2025
 abstract: |
   MObI enables realistic, controllable insertion of objects, jointy, in both camera and lidar, using a single reference image. [Project page →](https://alexbubu.com/mobi)
 url_code: https://github.com/alexbuburuzan/MObI
-url_custom:
-  - name: Project Page
+video: https://alexbubu.com/mobi/teaser_video.mp4
+links:
+  - name: Website
     url: https://alexbubu.com/mobi
 date: 2025-07-13
 draft: false

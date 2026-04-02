@@ -1,0 +1,28 @@
+{{ $item := .item }}
+{{ $has_attachments := partial "functions/has_attachments" $item }}
+
+<div class="pub-list-item view-citation" style="margin-bottom: 1.4rem;">
+
+  <div style="margin-bottom: 0.15rem;">
+    <a href="{{ $item.RelPermalink }}">{{ $item.Title }}</a>
+  </div>
+
+  <div style="font-size: var(--fs-2); color: var(--accent); margin-bottom: 0.15rem;">
+    {{ if $item.Params.publication_short }}
+      {{- $item.Params.publication_short | markdownify -}}
+    {{ else if $item.Params.publication }}
+      {{- $item.Params.publication | markdownify -}}
+    {{ end }}
+  </div>
+
+  <div style="font-size: var(--fs-2); color: var(--gray-2);">
+    {{ partial "page_metadata_authors" $item }}
+  </div>
+
+  {{ if $has_attachments }}
+  <div class="btn-links" style="margin-top: 0.1rem;">
+    {{ partial "page_links" (dict "page" $item "is_list" 1) }}
+  </div>
+  {{ end }}
+
+</div>

@@ -78,6 +78,13 @@
 
   </div>
   <div class="ml-3">
+    {{ if $item.Params.video }}
+    <a href="{{$link}}" {{ $target | safeHTMLAttr }}>
+      <video autoplay muted loop playsinline style="max-width: 350px; height: auto; display: block;">
+        <source src="{{ $item.Params.video }}" type="video/mp4">
+      </video>
+    </a>
+    {{ else }}
     {{ $resource := ($item.Resources.ByType "image").GetMatch "*featured*" }}
     {{ with $resource }}
     {{ $image := .Resize "400x webp" }}
@@ -86,5 +93,6 @@
            alt="{{ $item.Title }}" loading="lazy">
     </a>
     {{end}}
+    {{ end }}
   </div>
 </div>

@@ -124,8 +124,14 @@ h3, h4, h5 { font-weight: 500; }
 
 // 6. Publications
 // ----------------
-.media.stream-item img {
+.media.stream-item img,
+.media.stream-item video {
   max-width: 350px;
+  max-height: 200px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
 }
 
 @media screen and (max-width: 768px) {
@@ -211,6 +217,16 @@ ul.ul-edu li {
 ul.ul-edu li .description p.institution {
   font-size: var(--fs-2);
   color: var(--accent);
+}
+
+.pub-list-item .btn-links {
+  padding-top: 2px !important;
+}
+
+.pub-list-item.view-citation,
+.media.stream-item.view-compact {
+  border-left: 2px solid var(--border);
+  padding-left: 0.75rem;
 }
 
 // 10. Remove decorative chrome
