@@ -1,0 +1,45 @@
+{{ $ := .root }}
+{{ $page := .page }}
+{{ $columns := $page.Params.design.columns | default "2" }}
+
+<!-- Experience widget -->
+<div class="col-12 {{if eq $columns "2"}}col-lg-8{{end}}">
+  {{ with $page.Content }}{{ . }}{{ end }}
+
+  {{ if $page.Params.experience }}
+  {{ range $page.Params.experience }}
+  <div class="experience-item" style="margin-bottom: 1.6rem; display: flex; gap: 1rem; align-items: flex-start;">
+    {{- if .company_logo}}
+    {{- $svg_icon := resources.Get (printf "media/icons/brands/%s.svg" .company_logo) -}}
+    {{ if not $svg_icon }}{{ errorf "Brand logo not found at `assets/media/icons/brands/%s.svg`" .company_logo }}{{end}}
+    <div style="flex-shrink: 0; margin-top: 0.2rem;">
+      {{- with .company_url}}<a href="{{.}}" target="_blank" rel="noopener">{{end -}}
+      <img src="{{ $svg_icon.RelPermalink }}" width="56px" height="56px" alt="{{.company | plainify}}" loading="lazy">
+      {{- with .company_url}}</a>{{end -}}
+    </div>
+    {{end}}
+    <div>
+      <div class="exp-title">{{.title | markdownify | emojify}}</div>
+      <div class="exp-company">
+        {{- with .company_url}}<a href="{{.}}" target="_blank" rel="noopener">{{end -}}
+        {{.company | markdownify | emojify}}
+        {{- with .company_url}}</a>{{end -}}
+      </div>
+      <div class="exp-meta">
+        {{ (time .date_start) | time.Format ($page.Params.date_format | default "January 2006") }} –
+        {{ if .date_end }}
+          {{ (time .date_end) | time.Format ($page.Params.date_format | default "January 2006") }}
+        {{ else }}
+          {{ i18n "present" | default "Present" }}
+        {{ end }}
+        {{with .location}}
+          <span class="middot-divider"></span>
+          <span>{{.}}</span>
+        {{end}}
+      </div>
+      {{with .description}}<div style="font-size: 0.95rem; color: #444; margin-top: 0.2rem;">{{. | markdownify | emojify}}</div>{{end}}
+    </div>
+  </div>
+  {{end}}
+  {{end}}
+</div>

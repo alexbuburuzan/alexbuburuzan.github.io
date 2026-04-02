@@ -31,7 +31,7 @@ marketing:
 
 header:
   navbar:
-    enable: true
+    enable: false
     align: r
     show_logo: true
     show_language: false
@@ -43,12 +43,9 @@ header:
 
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: '© {year} Alexandru Buburuzan'
     license:
-      enable: true
-      allow_derivatives: false
-      share_alike: true
-      allow_commercial: false
+      enable: false
 
 # Localization
 

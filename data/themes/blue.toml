@@ -12,10 +12,10 @@ name = "Blue"
   menu_title = "#000"
 
   # Links
-  link = "#558C8C"
-  link_hover = "#000"
+  link = "#222"
+  link_hover = "#222"
   link_decoration = "underline"
 
   # Home sections
-  home_section_odd = "#f6f8f9"
+  home_section_odd = "#ffffff"
   home_section_even = "#ffffff"

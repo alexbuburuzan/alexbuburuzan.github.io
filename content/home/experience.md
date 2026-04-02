@@ -28,7 +28,7 @@ experience:
     location: Cambridge & Oxford, UK
     date_start: '2025-05-26'
     date_end: '2026-03-31'
-    description: Vision Language Action (VLA) models for autonomous driving
+    description: Vision Language Action (VLA) models for autonomous driving.
   - title: Research Engineer Intern
     company: Five AI
     company_url: 'https://www.five.ai/'
