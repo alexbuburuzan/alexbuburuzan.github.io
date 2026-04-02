@@ -17,6 +17,14 @@
   --accent:  #558C8C;  // very important elements
 }
 
+// 0. Layout width
+// -----------------
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1600px;
+  }
+}
+
 // 1. Base typography
 // -------------------
 body {
