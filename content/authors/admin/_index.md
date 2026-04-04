@@ -9,6 +9,10 @@ social:
   #   link: /#contact
   #   display:
   #     header: false
+  - icon: file-alt
+    icon_pack: fas
+    label: CV
+    link: resume.pdf
   - icon: linkedin
     icon_pack: fab
     label: LinkedIn
@@ -21,10 +25,10 @@ social:
     icon_pack: fab
     label: GitHub
     link: https://github.com/alexbuburuzan
-  - icon: file-alt
+  - icon: camera
     icon_pack: fas
-    label: CV
-    link: resume.pdf
+    label: Photography
+    link: /photography/
 organizations:
   - name: "Email: alexbubu@robots.ox.ac.uk"
     url: mailto:alexbubu@robots.ox.ac.uk

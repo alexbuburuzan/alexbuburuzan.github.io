@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photography — Alexandru Buburuzan</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --gray-1: #222;
+      --gray-2: #555;
+      --gray-3: #999;
+      --border: #e8e8e8;
+      --accent: #558C8C;
+    }
+
+    body {
+      background: #fff;
+      color: var(--gray-1);
+      font-family: "Libre Baskerville", "Libertinus Serif", Georgia, serif;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      max-width: 960px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 0.8rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    header a {
+      font-size: 0.9rem;
+      font-family: "Libertinus Sans", sans-serif;
+      color: var(--gray-3);
+      text-decoration: none;
+    }
+
+    header a:hover { color: var(--gray-1); }
+
+    header h1 {
+      font-size: 1.4rem;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+    }
+
+    .viewer {
+      flex: 1;
+      max-width: 960px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 1.5rem 1.5rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .img-container {
+      height: 72vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .img-container img {
+      max-width: 100%;
+      max-height: 100%;
+      height: auto;
+      display: block;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    .img-container img.loaded { opacity: 1; }
+
+    .controls {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      margin-top: 1.2rem;
+      user-select: none;
+    }
+
+    .controls button {
+      background: none;
+      border: none;
+      font-family: "Libertinus Sans", sans-serif;
+      font-size: 0.9rem;
+      color: var(--gray-3);
+      cursor: pointer;
+      padding: 0.3rem 0;
+      transition: color 0.2s;
+    }
+
+    .controls button:hover { color: var(--gray-1); }
+    .controls button:disabled { color: var(--border); cursor: default; }
+
+    .counter {
+      font-family: "Libertinus Sans", sans-serif;
+      font-size: 0.9rem;
+      color: var(--gray-3);
+      font-variant-numeric: tabular-nums;
+    }
+
+    footer {
+      max-width: 960px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 1rem 1.5rem 2.5rem;
+      border-top: 1px solid var(--border);
+      font-family: "Libertinus Sans", sans-serif;
+      font-size: 0.9rem;
+      color: var(--gray-3);
+      line-height: 1.6;
+    }
+
+    footer a {
+      color: var(--gray-3);
+      text-decoration: underline;
+    }
+
+    @media (max-width: 480px) {
+      header { padding: 1.5rem 1rem 0.5rem; }
+      .viewer { padding: 1rem; }
+      .img-container { height: 65vh; }
+      footer { padding: 1rem 1rem 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Photography</h1>
+    <a href="/">&larr; Main website</a>
+  </header>
+
+  <div class="viewer">
+    <div class="img-container">
+      <img id="photo" src="" alt="">
+    </div>
+    <div class="controls">
+      <button id="prev">&larr; prev</button>
+      <span class="counter" id="counter"></span>
+      <button id="next">next &rarr;</button>
+    </div>
+  </div>
+
+  <footer>
+    All photographs &copy; Alexandru Buburuzan. Licensed under
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>.
+  </footer>
+
+  <script>
+    const photos = [
+      "/photos/DSC03730_2025-05-31_21-43-30.jpg",
+      "/photos/DSC04252_2025-07-05_21-14-28.jpg",
+      "/photos/DSC06427_2026-03-14_13-43-30.jpg",
+      "/photos/DSC06336_2026-01-10_09-58-16.jpg",
+      "/photos/DSC06331_2026-01-10_09-56-25.jpg",
+      "/photos/DSC06326_2026-01-10_09-55-45.jpg",
+      "/photos/DSC05942_2026-01-02_11-45-55.jpg",
+      "/photos/DSC05783_2025-11-23_16-43-34.jpg",
+      "/photos/DSC06194_2026-01-03_12-44-16.jpg",
+      "/photos/DSC05191_2025-07-12_20-15-02.jpg",
+      "/photos/DSC04788_2025-07-12_17-48-43.jpg",
+      "/photos/DSC04772_2025-07-12_17-37-38.jpg",
+      "/photos/DSC04677_2025-07-12_16-42-46.jpg",
+      "/photos/DSC04638_2025-07-12_16-14-28.jpg"
+    ];
+
+    let current = 0;
+    const img = document.getElementById('photo');
+    const counter = document.getElementById('counter');
+    const prevBtn = document.getElementById('prev');
+    const nextBtn = document.getElementById('next');
+
+    function show(i) {
+      current = i;
+      img.classList.remove('loaded');
+      img.onload = () => img.classList.add('loaded');
+      img.src = photos[current];
+      counter.textContent = (current + 1) + ' / ' + photos.length;
+      prevBtn.disabled = current === 0;
+      nextBtn.disabled = current === photos.length - 1;
+
+      // Preload next image
+      if (current + 1 < photos.length) {
+        const next = new Image();
+        next.src = photos[current + 1];
+      }
+    }
+
+    prevBtn.addEventListener('click', () => { if (current > 0) show(current - 1); });
+    nextBtn.addEventListener('click', () => { if (current < photos.length - 1) show(current + 1); });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft' && current > 0) show(current - 1);
+      if (e.key === 'ArrowRight' && current < photos.length - 1) show(current + 1);
+    });
+
+    show(0);
+  </script>
+
+</body>
+</html>
