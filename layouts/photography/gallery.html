@@ -1,0 +1,82 @@
+{{ define "main" }}
+
+{{/* Build responsive derivatives once, server-side. Originals live in
+     `assets/media/photos/` and are never published at full size. */}}
+{{ $photos := slice }}
+{{ range .Params.photos }}
+  {{ $src := resources.Get (printf "media/photos/%s" .file) }}
+  {{ if not $src }}
+    {{ errorf "photography: no such photo `assets/media/photos/%s` (listed in content/photography.md)" .file }}
+  {{ end }}
+  {{ $sm := $src.Fit "800x800 webp q82" }}
+  {{ $md := $src.Fit "1400x1400 webp q82" }}
+  {{ $lg := $src.Fit "1600x1600 webp q78" }}
+  {{ $photos = $photos | append (dict
+      "src" $md.RelPermalink
+      "srcset" (printf "%s 800w, %s 1400w, %s 1600w" $sm.RelPermalink $md.RelPermalink $lg.RelPermalink)
+      "w" $lg.Width
+      "h" $lg.Height
+      "alt" (.alt | default (printf "Photograph by %s" site.Title))) }}
+{{ end }}
+
+<div class="universal-wrapper photo-gallery">
+
+  <h1>{{ .Title }}</h1>
+
+  <div class="photo-frame">
+    <img id="photo" alt="" sizes="(max-width: 900px) 100vw, 900px">
+  </div>
+
+  <div class="photo-controls">
+    <button id="photo-prev" type="button" aria-label="Previous photograph">&larr; prev</button>
+    <span class="photo-counter" id="photo-counter" aria-live="polite"></span>
+    <button id="photo-next" type="button" aria-label="Next photograph">next &rarr;</button>
+  </div>
+
+  <p class="photo-license">
+    All photographs &copy; {{ site.Title }}. Licensed under
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>.
+  </p>
+
+</div>
+
+<script id="photo-data" type="application/json">{{ $photos | jsonify | safeJS }}</script>
+<script>
+(function () {
+  var photos = JSON.parse(document.getElementById('photo-data').textContent);
+  if (!photos.length) return;
+
+  var img = document.getElementById('photo');
+  var counter = document.getElementById('photo-counter');
+  var prev = document.getElementById('photo-prev');
+  var next = document.getElementById('photo-next');
+  var i = 0;
+
+  function show(n) {
+    i = n;
+    var p = photos[i];
+    img.classList.remove('loaded');
+    img.onload = function () { img.classList.add('loaded'); };
+    img.src = p.src;
+    img.srcset = p.srcset;
+    img.width = p.w;
+    img.height = p.h;
+    img.alt = p.alt;
+    counter.textContent = (i + 1) + ' / ' + photos.length;
+    prev.disabled = i === 0;
+    next.disabled = i === photos.length - 1;
+    if (photos[i + 1]) { var n2 = new Image(); n2.srcset = photos[i + 1].srcset; }
+  }
+
+  prev.addEventListener('click', function () { if (i > 0) show(i - 1); });
+  next.addEventListener('click', function () { if (i < photos.length - 1) show(i + 1); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowLeft' && i > 0) show(i - 1);
+    if (e.key === 'ArrowRight' && i < photos.length - 1) show(i + 1);
+  });
+
+  show(0);
+})();
+</script>
+
+{{ end }}

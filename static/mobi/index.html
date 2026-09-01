@@ -2,25 +2,27 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
+  <!-- Social media / SEO -->
+  <meta name="description" content="MObI: a diffusion-based framework for multimodal object inpainting that inserts realistic, controllable objects into camera and lidar simultaneously, from a single reference image and a 3D bounding box.">
+  <meta name="author" content="Alexandru Buburuzan, Anuj Sharma, John Redford, Puneet K. Dokania, Romain Mueller">
+  <link rel="canonical" href="https://alexbubu.com/mobi/">
 
+  <meta property="og:type" content="article"/>
+  <meta property="og:site_name" content="Alexandru Buburuzan"/>
+  <meta property="og:title" content="MObI: Multimodal Object Inpainting Using Diffusion Models"/>
+  <meta property="og:description" content="Realistic, controllable object insertion into camera and lidar simultaneously, from a single reference image and a 3D bounding box. CVPR 2025 Workshop on Data-Driven Autonomous Driving Simulation."/>
+  <meta property="og:url" content="https://alexbubu.com/mobi/"/>
+  <meta property="og:image" content="https://alexbubu.com/mobi/open_world.jpg"/>
+  <meta property="og:image:width" content="1122"/>
+  <meta property="og:image:height" content="757"/>
+  <meta property="og:image:alt" content="MObI inserting diverse open-world objects into driving scenes across camera and lidar."/>
 
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <!-- <meta name="twitter:image" content="images/your_twitter_banner_image.png"> -->
   <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="twitter:title" content="MObI: Multimodal Object Inpainting Using Diffusion Models">
+  <meta name="twitter:description" content="Realistic, controllable object insertion into camera and lidar simultaneously, from a single reference image and a 3D bounding box. CVPR 2025 DDADS.">
+  <meta name="twitter:image" content="https://alexbubu.com/mobi/open_world.jpg">
+
+  <meta name="keywords" content="multimodal object inpainting, diffusion models, autonomous driving, lidar, camera-lidar, synthetic data, counterfactual generation, scene editing, perception testing, MObI">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -72,7 +74,7 @@
                         <sup>2</sup>The University of Manchester &nbsp;&nbsp;
                         <sup>3</sup>University of Oxford
                       <br><a href="https://agents4ad.github.io/#papers" target="_blank">CVPR Workshop on Data-Driven Autonomous Driving Simulation (DDADS)</a></span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>work done during an internship at FiveAI</small></span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>work done during an internship at Five AI</small></span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -124,7 +126,7 @@
     <div class="hero-body">
       <video poster="" id="tree" autoplay muted loop playsinline height="100%" style="pointer-events: none;">
         <!-- Your video here -->
-        <source src="mobi/teaser_video.mp4"
+        <source src="teaser_video.mp4"
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
@@ -164,7 +166,7 @@
             <h2 class="subtitle has-text-centered">
               Object inpainting methods based on edit masks alone such as Paint-by-Example achieve high realism but can lead to surprising results because there are often multiplesemantically consistent ways to inpaint an object within a scene
             </h2>
-            <img src="mobi/comparison_with_pbe.jpg" alt="Comparison with PBE" class="full-width-image"/>
+            <img src="comparison_with_pbe.jpg" alt="Comparison with PBE" class="full-width-image"/>
           </div>
         </div>
         <div class="column">
@@ -172,7 +174,7 @@
             <h2 class="subtitle has-text-centered">
               Methods based on 3D reconstruction such as NeuRAD have strong controllability but sometimes lead to low realism, especially for object viewpoints that have not been observed.
             </h2>
-            <img src="mobi/180flip.jpg" alt="180 degree flip demonstration" class="full-width-image"/>
+            <img src="180flip.jpg" alt="180 degree flip demonstration" class="full-width-image"/>
           </div>
         </div>
       </div>
@@ -190,7 +192,7 @@
        <div class="item">
         <!-- Your image here -->
         <div class="image-box">
-          <img src="mobi/architecture.jpg" alt="MObI Architecture" class="full-width-image"/>
+          <img src="architecture.jpg" alt="MObI Architecture" class="full-width-image"/>
           <h2 class="subtitle has-text-centered">
             We extend Paint-by-Example, a reference-based image inpainting method, to include bounding box conditioning and to jointly generate camera and lidar perception inputs.
           </h2>
@@ -209,7 +211,7 @@
       <h2 class="title is-2">Results</h2>
       <div class="item">
         <div class="image-box">
-          <img src="mobi/replacement_results.jpg" alt="Replacement Results" class="full-width-image"/>
+          <img src="replacement_results.jpg" alt="Replacement Results" class="full-width-image"/>
           <h2 class="subtitle has-text-centered">
             Object replacement results across multiple modalities, demonstrating realistic inpainting in both RGB camera and lidar data.
           </h2>
@@ -217,7 +219,7 @@
       </div>
       <div class="item">
         <div class="image-box">
-          <img src="mobi/compositing.jpg" alt="Spatial Compositing" class="full-width-image"/>
+          <img src="compositing.jpg" alt="Spatial Compositing" class="full-width-image"/>
           <h2 class="subtitle has-text-centered">
             Spatial compositing of camera-lidar object inpainting. Scene presents challenging lighting conditions.
           </h2>
@@ -235,7 +237,7 @@
       <h2 class="title is-2">Discussion</h2>
       <div class="item">
         <div class="image-box">
-          <img src="mobi/open_world.jpg" alt="Open World" class="full-width-image"/>
+          <img src="open_world.jpg" alt="Open World" class="full-width-image"/>
           <h2 class="subtitle has-text-centered">
             MObI trained only on the pedestrian and car classes of nuScenes shows promising results in open-world scenarios, yet reverts to similar classes in extreme cases.
           </h2>
@@ -253,12 +255,12 @@
       <h2 class="title">Poster</h2>
       <div class="pdf-container">
         <!-- Mobile-friendly PDF embed using PDF.js -->
-        <object data="mobi/cvpr25_MObI.pdf#toolbar=1&navpanes=0&scrollbar=1&page=1&view=FitH" 
+        <object data="cvpr25_MObI.pdf#toolbar=1&navpanes=0&scrollbar=1&page=1&view=FitH" 
                 type="application/pdf" 
                 class="responsive-pdf">
           <div class="pdf-fallback">
             <p>Your browser doesn't support PDF viewing. 
-               <a href="mobi/cvpr25_MObI.pdf" target="_blank" class="button is-outlined">
+               <a href="cvpr25_MObI.pdf" target="_blank" class="button is-outlined">
                  <span class="icon"><i class="fas fa-download"></i></span>
                  <span>Download PDF</span>
                </a>

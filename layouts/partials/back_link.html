@@ -1,0 +1,14 @@
+{{/*
+  "Back to homepage" link for sub-pages.
+
+  The site runs without a navbar (`header.navbar.enable: false`), so pages
+  reached from the homepage — /publication/, individual publications, taxonomy
+  listings — would otherwise be dead ends with no route back.
+
+  The label names the person rather than saying "main website": publication
+  pages are commonly entered cold from Google Scholar, a DOI resolver or a
+  citation, and for those readers "main website" of *what* isn't obvious.
+*/}}
+<div class="back-link universal-wrapper">
+  <a href="{{ "/" | relLangURL }}">&larr; Alexandru&rsquo;s website</a>
+</div>

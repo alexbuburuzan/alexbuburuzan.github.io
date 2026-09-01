@@ -10,7 +10,7 @@ authors:
   - Puneet K. Dokania
 doi: https://doi.org/10.48550/arXiv.2512.00021
 publication: Transactions on Machine Learning Research
-publication_short: TMLR in 2026 | Survery Certification
+publication_short: TMLR 2026 | Survey Certification
 abstract: |
   Comprehensive review of 37 foundation-model-based approaches for trajectory planning in autonomous driving assessing openness and their inclusion in a novel taxonomy.
 draft: false

@@ -34,18 +34,18 @@ organizations:
     url: mailto:alexbubu@robots.ox.ac.uk
 education:
   courses:
-    - course: DPhil (PhD) Autonomous Intelligent Machines and Systems
+    - course: DPhil, Autonomous Intelligent Machines and Systems
       institution: University of Oxford
       year: 2025 - 2029
-    - course: BSc (Hons) Artificial Intelligence with Industrial Experience
+    - course: BSc (Hons), Artificial Intelligence with Industrial Experience
       institution: The University of Manchester
       year: 2021 - 2025
 email: "alexbubu@robots.ox.ac.uk"
 superuser: true
 highlight_name: true
 ---
-I am Alex, a DPhil (PhD) student at the University of Oxford in [Autonomous Intelligent Machines and Systems](https://aims.robots.ox.ac.uk/students/) <span style="color: var(--accent);">(AIMS CDT)</span>. I recently completed a research internship at [FiveAI](https://www.five.ai/research) on Vision Language Action (VLA) models for autonomous driving, advised by [Dr. Puneet Dokania](https://puneetdokania.github.io/).
+I'm Alex, a DPhil (PhD) student in the [Visual Geometry Group (VGG)](https://www.robots.ox.ac.uk/~vgg/people.html) at the University of Oxford, advised by [Prof. Andrew Zisserman](https://www.robots.ox.ac.uk/~az/) and [Dr. Puneet Dokania](https://puneetdokania.github.io/), researching generative modelling for perception. Part of the [AIMS CDT](https://aims.robots.ox.ac.uk/students/).
 
-I graduated with a BSc in AI from The University of Manchester. I completed my [dissertation](https://arxiv.org/pdf/2507.23058) supervised by [Prof. Tim Cootes](https://scholar.google.com/citations?user=zhlk0OsAAAAJ&hl=en) on counterfactual generation using diffusion inpainting models (see [MObI](https://alexbubu.com/mobi) and [AnydoorMed](https://alexbubu.com/anydoormed)).
+Before starting my DPhil, I graduated with a BSc in AI from The University of Manchester. I completed my [dissertation](https://arxiv.org/pdf/2507.23058) supervised by [Prof. Tim Cootes](https://scholar.google.com/citations?user=zhlk0OsAAAAJ&hl=en) on counterfactual generation using diffusion inpainting models (see [MObI](/mobi/) and [AnydoorMed](/anydoormed/)).
 
-I began my computer vision journey at 16 in a medical imaging startup, later returning as a research engineer. Afterwards, I joined [FiveAI](https://www.five.ai/research) for a research internship on multimodal sensor fusion and synthetic data generation in autonomous driving, advised by [Dr. Romain Mueller](https://scholar.google.com/citations?user=6K_Z_9sAAAAJ&hl=en).
+I began my computer vision journey at 16 in a medical imaging startup, later rejoining as a research engineer. Afterwards, I joined [Five AI](https://www.five.ai/research) as a year-long Research Engineer Intern on multimodal sensor fusion and synthetic data generation for autonomous driving; returning as a Research Scientist Intern on Vision Language Action models (VLAs).

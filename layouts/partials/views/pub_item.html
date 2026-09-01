@@ -1,0 +1,62 @@
+{{/*
+  Single source of truth for how a publication renders in a list.
+
+  Used by both `views/compact.html` (homepage) and `views/citation.html`
+  (/publication/), so the two listings can't drift apart. All styling lives in
+  `assets/scss/custom.scss` under "Publications" — no inline styles here.
+
+  Params:
+    item        the publication page
+    show_figure whether to render the featured image alongside the citation
+*/}}
+
+{{ $item := .item }}
+{{ $show_figure := .show_figure | default false }}
+{{ $has_attachments := partial "functions/has_attachments" $item }}
+
+{{ $link := $item.RelPermalink }}
+{{ $target := "" }}
+{{ with $item.Params.external_link }}
+  {{ $link = . }}
+  {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+{{ end }}
+
+{{ $figure := "" }}
+{{ if $show_figure }}
+  {{ with ($item.Resources.ByType "image").GetMatch "*featured*" }}
+    {{ $figure = .Fit "700x400 webp q82" }}
+  {{ end }}
+{{ end }}
+
+<div class="pub-item{{ if $figure }} has-figure{{ end }}">
+
+  <div class="pub-item-body">
+    <div class="pub-item-title">
+      <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a>
+    </div>
+
+    {{ with or $item.Params.publication_short $item.Params.publication }}
+    <div class="pub-item-venue">{{ . | markdownify }}</div>
+    {{ end }}
+
+    {{ with $item.Params.authors }}
+    <div class="pub-item-authors">{{ partial "page_metadata_authors" $item }}</div>
+    {{ end }}
+
+    {{ if $has_attachments }}
+    <div class="btn-links">
+      {{ partial "page_links" (dict "page" $item "is_list" 1) }}
+    </div>
+    {{ end }}
+  </div>
+
+  {{ with $figure }}
+  <div class="pub-item-figure">
+    <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>
+      <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}"
+           alt="Figure from “{{ $item.Title }}”" loading="lazy">
+    </a>
+  </div>
+  {{ end }}
+
+</div>

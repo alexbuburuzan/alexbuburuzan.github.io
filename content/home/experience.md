@@ -54,7 +54,7 @@ experience:
     location: Timisoara, Romania
     date_start: '2020-03-01'
     date_end: '2020-09-01'
-    description: Build a time-efficient AI model for the detection of intracranial haemorrhages meant for speeding up the triaging process.
+    description: Built a time-efficient AI model for the detection of intracranial haemorrhages meant for speeding up the triaging process.
 
 design:
   columns: '1'

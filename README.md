@@ -1,20 +1,43 @@
-# [Hugo Academic Theme](https://github.com/wowchemy/starter-hugo-academic)
+# alexbubu.com
 
-The Hugo **Academic Resumé Template** empowers you to easily create your job-winning online resumé, showcase your academic publications, and create online courses or knowledge bases to grow your audience.
+Personal site of Alexandru Buburuzan. Built with [Hugo](https://gohugo.io/) and
+the [Wowchemy](https://wowchemy.com) academic theme, deployed to GitHub Pages by
+`.github/workflows/hugo.yaml` on every push to `main`.
 
-️**Trusted by 250,000+ researchers, educators, and students.** Highly customizable via the integrated **no-code, widget-based Wowchemy page builder**, making every site truly personalized 
+## Running locally
 
-Easily write technical content with plain text Markdown, LaTeX math, diagrams, RMarkdown, or Jupyter, and import publications from BibTeX.
+Requires **Hugo extended 0.98.0** (the version the deploy workflow pins) and a
+**Go** toolchain — the theme is consumed as a Hugo Module, so Hugo shells out to
+`go` to fetch it on first build.
 
-[Check out the latest demo](https://academic-demo.netlify.app/) of what you'll get in less than 10 minutes, or [get inspired by our academics and research groups](https://wowchemy.com/creators/).
+```sh
+brew install hugo go   # or download hugo_extended 0.98.0 from the Hugo releases page
+hugo server            # http://localhost:1313
+```
 
-The integrated [**Wowchemy**](https://wowchemy.com) website builder and CMS makes it easy to create a beautiful website for free. Edit your site in the CMS (or your favorite editor), generate it with [Hugo](https://github.com/gohugoio/hugo), and deploy with GitHub or Netlify. Customize anything on your site with widgets, light/dark themes, and language packs.
+Newer Hugo releases are not backward compatible with Wowchemy v5; pin 0.98.0 to
+match CI.
 
-- [**Get Started**](https://wowchemy.com/hugo-themes/)
-- [View the **documentation**](https://wowchemy.com/docs/)
-- [Chat with the **Wowchemy research community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)
-- Twitter: [@wowchemy](https://twitter.com/wowchemy) [@GeorgeCushen](https://twitter.com/GeorgeCushen) [#MadeWithWowchemy](https://twitter.com/search?q=%23MadeWithWowchemy&src=typed_query)
-- **Automatically import your publications from BibTeX** with the [Hugo Academic CLI](https://github.com/wowchemy/hugo-academic-cli)
-- [Suggest an improvement](https://github.com/wowchemy/wowchemy-hugo-themes/issues)
-- **Updating?** View the [Update Guide](https://wowchemy.com/docs/hugo-tutorials/update/) and [Release Notes](https://github.com/wowchemy/wowchemy-hugo-themes/releases)
+## Layout
 
+| Path | Purpose |
+| --- | --- |
+| `config/_default/` | Site config, params, languages. `menus.yaml` is intentionally empty — the site runs without a navbar. |
+| `content/authors/admin/` | The bio, profile links, and education shown on the homepage. |
+| `content/home/` | Homepage sections (about, publications, experience). |
+| `content/publication/` | One page bundle per paper: `index.md`, `cite.bib`, `featured.png`. |
+| `content/photography.md` | Gallery contents and running order. |
+| `content/mobi.html`, `content/anydoormed.html` | Standalone paper sites. Deliberately plain HTML with no Hugo templating so they stay portable; served at `/mobi` and `/anydoormed` with assets from `static/mobi/` and `static/anydoormed/`. |
+| `layouts/` | Theme overrides. `partials/views/pub_item.html` is the single renderer for publication listings. |
+| `assets/scss/custom.scss` | All site styling — design tokens plus overrides, numbered by section. |
+| `assets/media/photos/` | Photography originals. Never served directly; `layouts/photography/gallery.html` generates responsive WebP derivatives. |
+
+## Adding things
+
+**A publication** — create `content/publication/<key>/` with `index.md`,
+`cite.bib`, and a `featured.png`. Keep `featured.png` under ~1600px wide: the
+theme uses it directly as the page's `og:image`, so it is published as-is.
+
+**A photograph** — drop the file in `assets/media/photos/` and add a `- file:`
+line to `content/photography.md` at the position you want it in the running
+order. The build fails loudly if a listed file is missing.

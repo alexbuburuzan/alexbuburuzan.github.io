@@ -1,0 +1,24 @@
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {{ range .Data.Pages }}
+  {{- if .Permalink -}}
+  <url>
+    <loc>{{ .Permalink }}</loc>
+    {{ if not .Lastmod.IsZero }}<lastmod>{{ safeHTML ( .Lastmod.Format "2006-01-02T15:04:05-07:00" ) }}</lastmod>{{ end }}
+    {{ with .Sitemap.ChangeFreq }}<changefreq>{{ . }}</changefreq>{{ end }}
+    {{ if ge .Sitemap.Priority 0.0 }}<priority>{{ .Sitemap.Priority }}</priority>{{ end }}
+  </url>
+  {{- end -}}
+  {{ end }}
+
+  {{/* The two paper sites are standalone HTML in `content/`, deliberately kept
+       portable rather than folded into Hugo. Hugo therefore doesn't treat them
+       as pages, so they have to be listed here explicitly or they never get
+       crawled. */}}
+  {{ range slice "mobi/" "anydoormed/" }}
+  <url>
+    <loc>{{ printf "%s%s" site.BaseURL . }}</loc>
+    <priority>0.8</priority>
+  </url>
+  {{ end }}
+</urlset>

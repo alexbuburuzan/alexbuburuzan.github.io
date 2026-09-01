@@ -2,25 +2,27 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
+  <!-- Social media / SEO -->
+  <meta name="description" content="AnydoorMed: reference-guided anomaly inpainting for mammography, transferring lesion characteristics from a source scan to a target location to generate realistic medical counterfactuals.">
+  <meta name="author" content="Alexandru Buburuzan">
+  <link rel="canonical" href="https://alexbubu.com/anydoormed/">
 
+  <meta property="og:type" content="article"/>
+  <meta property="og:site_name" content="Alexandru Buburuzan"/>
+  <meta property="og:title" content="AnydoorMed: Reference-Guided Anomaly Inpainting for Medical Counterfactuals"/>
+  <meta property="og:description" content="Reference-guided diffusion inpainting for mammography that transfers lesion characteristics between scans, blending them seamlessly with surrounding tissue to synthesise realistic counterfactuals."/>
+  <meta property="og:url" content="https://alexbubu.com/anydoormed/"/>
+  <meta property="og:image" content="https://alexbubu.com/anydoormed/anydoormed_teaser.jpg"/>
+  <meta property="og:image:width" content="3046"/>
+  <meta property="og:image:height" content="1106"/>
+  <meta property="og:image:alt" content="AnydoorMed transferring breast lesions between mammography scans."/>
 
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <!-- <meta name="twitter:image" content="images/your_twitter_banner_image.png"> -->
   <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="twitter:title" content="AnydoorMed: Reference-Guided Anomaly Inpainting for Medical Counterfactuals">
+  <meta name="twitter:description" content="Reference-guided diffusion inpainting for mammography, transferring lesion characteristics between scans to synthesise realistic medical counterfactuals.">
+  <meta name="twitter:image" content="https://alexbubu.com/anydoormed/anydoormed_teaser.jpg">
+
+  <meta name="keywords" content="medical image synthesis, anomaly inpainting, diffusion models, mammography, breast lesions, counterfactual generation, reference-guided inpainting, VinDr-Mammo, AnyDoor, AnydoorMed">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -105,7 +107,7 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="anydoormed/anydoormed_teaser.jpg" alt="AnydoorMed Teaser" style="width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 0rem;">
+      <img src="anydoormed_teaser.jpg" alt="AnydoorMed Teaser" style="width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 0rem;">
       <h2 class="subtitle has-text-centered">
         Given a source image containing an anomaly and a target location within a possibly healthy scan, AnydoorMed can synthesise a new lesion that retains the visual and structural characteristics of the reference while blending it semantically with the surrounding tissue in the target context
       </h2>
@@ -139,7 +141,7 @@
        <div class="item">
         <!-- Your image here -->
         <div class="item" style="margin-top: 3rem; margin-top: 3rem;">
-          <img src="anydoormed/architecture_figure.jpg" alt="AnydoorMed Architecture" style="width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 0.5rem;"/>
+          <img src="architecture_figure.jpg" alt="AnydoorMed Architecture" style="width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 0.5rem;"/>
           <h2 class="subtitle has-text-centered">
             This work adapts <a href="https://arxiv.org/abs/2307.09481" target="_blank">AnyDoor</a>, a reference-based image inpainting method, to the medical domain. Additional input and output adaption layers were added to the variational autoencoder of StableDiffusion and finetuned on mammography scans from <a href="https://www.nature.com/articles/s41597-023-02100-7" target="_blank">VinDr-Mammo</a>. Gated cross-attention layers added within the pre-trained diffusion inpainting model were trained in a separate stage, with the medical autoencoder frozen. The anomaly's High Frequency map (HF map) was coloured purple for visualisation purposes only.
           </h2>
@@ -158,7 +160,7 @@
     
       
           <div class="item" style="margin-bottom: 3rem; margin-top: 3rem;">
-            <img src="anydoormed/insertion.jpg" alt="AnydoorMed insertion results" class="full-width-image" style="max-height: 80vh; object-fit: contain;"/>
+            <img src="insertion.jpg" alt="AnydoorMed insertion results" class="full-width-image" style="max-height: 80vh; object-fit: contain;"/>
             <h2 class="subtitle has-text-centered">
              Anomaly <strong>insertion</strong> results. AnydoorMed inserts the reference anomaly (second column), guided by the context and high-frequency map context (first column), into the healthy mammography scan (fourth column), producing the composited result (third column). The inpainted anomalies preserve some of the features present in the reference image, such as calcifications (first row). For all examples, the anomaly was composited semantically in the destination scan, within the breast tissue.
           </h2>
@@ -166,7 +168,7 @@
           <hr>
 
           <div class="item" style="margin-bottom: 3rem; margin-top: 3rem;">
-            <img src="anydoormed/replacement.jpg" alt="AnydoorMed replacement results" class="full-width-image" style="max-height: 80vh; object-fit: contain;"/>
+            <img src="replacement.jpg" alt="AnydoorMed replacement results" class="full-width-image" style="max-height: 80vh; object-fit: contain;"/>
            <h2 class="subtitle has-text-centered">
               Anomaly <strong>replacement</strong> results. AnydoorMed replaces the anomaly from the original scan (fourth column), with the reference anomaly (second column), guided by the context and high-frequency map context (first column), producing the composited result (third column). This is done by removing the anomaly from the scan and using a similarly-sized reference as a condition. The inpainted anomalies preserve some of the features present in the reference image, such as the “excavation” from the first row. All generated scans look highly realistic, with anomalies being semantically blended within the breast tissue.
           </h2>
@@ -176,7 +178,7 @@
        <!-- Main results image -->
       <div class="item" style="margin-top: 3rem; margin-top: 3rem;">
         <div style="text-align: center;">
-          <img src="anydoormed/results.jpg" alt="AnydoorMed Results" style="width: 100%; max-width: 90%; height: auto; max-height: 60vh; object-fit: contain; display: block; margin: 0 auto; border-radius: 0rem;"/>
+          <img src="results.jpg" alt="AnydoorMed Results" style="width: 100%; max-width: 90%; height: auto; max-height: 60vh; object-fit: contain; display: block; margin: 0 auto; border-radius: 0rem;"/>
           <h2 class="subtitle has-text-centered" style="margin-top: 1.5rem;">
             AnydoorMed results on the test set of VinDr-Mammo dataset according to image realism metrics.
           </h2>
@@ -194,7 +196,7 @@
       <h2 class="title is-2">Discussion</h2>
       <div class="item">
         <div class="item" style="margin-bottom: 3rem; margin-top: 3rem;">
-          <img src="anydoormed/failure.jpg" alt="Open World" style="width: 100%; max-width: 90%; height: auto; max-height: 60vh; object-fit: contain; display: block; margin: 0 auto; border-radius: 0rem;"/>
+          <img src="failure.jpg" alt="Open World" style="width: 100%; max-width: 90%; height: auto; max-height: 60vh; object-fit: contain; display: block; margin: 0 auto; border-radius: 0rem;"/>
           <h2 class="subtitle has-text-centered" style="margin-top: 1.5rem;">
             These examples illustrate some failure cases of AnydoorMed. From top to bottom: the inserted anomaly does not closely replicate the microcalcifications from the reference image (which may be undesirable in certain scenarios); the inpainting produces an anatomically implausible result due to the bounding box being placed primarily outside the breast tissue; and finally, the last example exhibits visible copy-and-paste artefacts.
           </h2>

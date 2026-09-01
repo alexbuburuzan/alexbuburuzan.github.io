@@ -32,6 +32,10 @@
 
   <div class="page-header">
     {{ partial "navbar" . }}
+    {{/* Without a navbar, sub-pages need an explicit route back to the homepage. */}}
+    {{ if and (not $show_navbar) (not (or .IsHome (eq .Type "widget_page"))) }}
+      {{ partial "back_link" . }}
+    {{ end }}
   </div>
 
   <div class="page-body">
