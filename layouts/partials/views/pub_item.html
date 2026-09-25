@@ -24,7 +24,7 @@
 {{ $figure := "" }}
 {{ if $show_figure }}
   {{ with ($item.Resources.ByType "image").GetMatch "*featured*" }}
-    {{ $figure = .Fit "700x400 webp q82" }}
+    {{ $figure = .Fit "1400x800 webp q85" }}
   {{ end }}
 {{ end }}
 

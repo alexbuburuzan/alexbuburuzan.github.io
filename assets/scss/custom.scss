@@ -218,7 +218,8 @@ h3, h4, h5 { font-weight: 500; }
 // 7. Section headings
 // --------------------
 .section-heading h1,
-.col-12 > h1 {
+.col-12 > h1,
+.pub .article-container > h3 {   // "TL;DR" heading on publication pages
   font-size: var(--fs-4);
   font-weight: 600;
   letter-spacing: 0.02em;

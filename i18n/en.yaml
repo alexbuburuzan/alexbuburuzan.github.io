@@ -1,0 +1,4 @@
+# Project-level overrides of the theme's i18n strings.
+# Publication pages carry a one-line summary rather than the paper's abstract.
+- id: abstract
+  translation: "TL;DR"
