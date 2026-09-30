@@ -51,6 +51,21 @@
           {{ if .url }}</a>{{ end }}
         </h3>
         {{ end }}
+
+        {{ with $person.contact_email }}
+        <h3>
+          <a class="js-obf-email" href="#" data-u="{{ .user | base64Encode }}" data-d="{{ .domain | base64Encode }}">
+            <span>Email: <span class="js-obf-email-text"></span></span>
+          </a>
+        </h3>
+        <script>
+          document.querySelectorAll('.js-obf-email').forEach(function (el) {
+            var addr = atob(el.dataset.u) + '\u0040' + atob(el.dataset.d);
+            el.href = 'mai' + 'lto:' + addr;
+            el.querySelector('.js-obf-email-text').textContent = addr;
+          });
+        </script>
+        {{ end }}
       </div>
 
       <ul class="network-icon" aria-hidden="true">

@@ -29,9 +29,11 @@ social:
     icon_pack: fas
     label: Photography
     link: /photography/
-organizations:
-  - name: "Email: alexbubu@robots.ox.ac.uk"
-    url: mailto:alexbubu@robots.ox.ac.uk
+# Email is split up here and only assembled client-side (see about.html),
+# so the full address never appears in the generated HTML.
+contact_email:
+  user: alexbubu
+  domain: robots.ox.ac.uk
 education:
   courses:
     - course: DPhil, Autonomous Intelligent Machines and Systems
@@ -40,7 +42,6 @@ education:
     - course: BSc (Hons), Artificial Intelligence with Industrial Experience
       institution: The University of Manchester
       year: 2021 - 2025
-email: "alexbubu@robots.ox.ac.uk"
 superuser: true
 highlight_name: true
 ---
